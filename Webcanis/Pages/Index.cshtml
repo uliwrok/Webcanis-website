@@ -1,0 +1,46 @@
+@page
+@{
+    ViewData["Title"] = "Design your future with us";
+}
+
+<div class="home-page" id="home">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md p-0" aria-label="Main navigation">
+            <div class="container-fluid p-0 align-items-start">
+                <a class="navbar-brand d-flex align-items-end m-0 p-0" asp-page="/Index" aria-label="Webcanis home">
+                    <img class="brand-mark" src="~/images/webcanis-logo.png" width="64" height="68" alt="" />
+                    <span class="brand-name">WEBCANIS</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation"
+                        aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
+                    <ul class="navbar-nav align-items-md-center">
+                        <li class="nav-item"><a class="nav-link" href="#home" aria-current="page">Home</a></li>
+                        <li class="nav-item"><button class="nav-link" type="button" disabled>Solutions</button></li>
+                        <li class="nav-item"><button class="nav-link" type="button" disabled>Contact</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title" class="mb-0">Design your<br />future with <span>us</span></h1>
+                <p class="hero-description mb-0">We design and create complete systems that help you<br class="desktop-break" /> get the presence that <strong>you</strong> need.</p>
+                @* Contact destination is intentionally empty until supplied. *@
+                <button class="btn btn-primary rounded-pill consultation-button" type="button" disabled>Start your Consultation</button>
+            </div>
+            <div class="hero-art" role="img" aria-label="A laptop showcasing a security camera website designed by Webcanis">
+                <img class="hero-laptop" src="~/images/laptop.png" width="4096" height="3302" alt="" fetchpriority="high" />
+                <div class="hero-screen-position">
+                    <img class="hero-screen" src="~/images/camera.png" alt="" />
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
