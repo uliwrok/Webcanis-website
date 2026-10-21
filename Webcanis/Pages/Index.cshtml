@@ -1,46 +1,156 @@
 @page
 @{
-    ViewData["Title"] = "Design your future with us";
+    ViewData["Title"] = "Web applications for your business";
 }
 
-<div class="home-page" id="home">
-    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-        <nav class="navbar navbar-expand-md p-0" aria-label="Main navigation">
-            <div class="container-fluid p-0 align-items-start">
-                <a class="navbar-brand d-flex align-items-end m-0 p-0" asp-page="/Index" aria-label="Webcanis home">
-                    <img class="brand-mark" src="~/images/webcanis-logo.png" width="64" height="68" alt="" />
-                    <span class="brand-name">WEBCANIS</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation"
-                        aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
-                    <ul class="navbar-nav align-items-md-center">
-                        <li class="nav-item"><a class="nav-link" href="#home" aria-current="page">Home</a></li>
-                        <li class="nav-item"><button class="nav-link" type="button" disabled>Solutions</button></li>
-                        <li class="nav-item"><button class="nav-link" type="button" disabled>Contact</button></li>
-                    </ul>
-                </div>
+<a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+<header class="site-header" id="inicio">
+    <nav class="navbar navbar-expand-lg py-0" aria-label="Main navigation">
+        <div class="container site-container">
+            <a class="navbar-brand d-flex align-items-center gap-2 m-0" asp-page="/Index" aria-label="Webcanis home">
+                <img class="brand-mark" src="~/images/webcanis-logo.png" width="40" height="42" alt="" />
+                <span class="brand-name">WEBCANIS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#soluciones">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proceso">How we work</a></li>
+                    <li class="nav-item"><a class="nav-link nav-contact" href="#contacto">Let’s talk <span aria-hidden="true">↗</span></a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <main id="main-content">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-copy">
-                <h1 id="hero-title" class="mb-0">Design your<br />future with <span>us</span></h1>
-                <p class="hero-description mb-0">We design and create complete systems that help you<br class="desktop-break" /> get the presence that <strong>you</strong> need.</p>
-                @* Contact destination is intentionally empty until supplied. *@
-                <button class="btn btn-primary rounded-pill consultation-button" type="button" disabled>Start your Consultation</button>
-            </div>
-            <div class="hero-art" role="img" aria-label="A laptop showcasing a security camera website designed by Webcanis">
-                <img class="hero-laptop" src="~/images/laptop.png" width="4096" height="3302" alt="" fetchpriority="high" />
-                <div class="hero-screen-position">
-                    <img class="hero-screen" src="~/images/camera.png" alt="" />
+<main id="main-content" tabindex="-1">
+    @* Shared boundary for future GLB scroll: Home → Solutions → Projects. No model or scroll animation yet. *@
+    <div class="showcase-journey">
+        <div class="container site-container">
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 journey-content">
+                    <section class="hero journey-section" aria-labelledby="hero-title">
+                        <p class="eyebrow">Web development for businesses</p>
+                        <h1 id="hero-title">You know your business. We help you build <span>what comes next.</span></h1>
+                        <p class="hero-description">We work with you to turn your needs into a web application that’s useful, intuitive, and ready to evolve.</p>
+                        <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+                            <a class="btn btn-primary rounded-pill" href="#contacto">Tell us about your idea <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="#proceso">How we work <span aria-hidden="true">↓</span></a>
+                        </div>
+                        <p class="hero-note">Your operations. Your goals. A team to build with you.</p>
+                        <div class="hero-mobile-art" aria-hidden="true"><partial name="_LaptopReference" /></div>
+                    </section>
+
+                    <section class="journey-section solutions-section" id="soluciones" aria-labelledby="solutions-title">
+                        <p class="eyebrow">01 / Solutions</p>
+                        <h2 id="solutions-title">Technology that understands <span>your business.</span></h2>
+                        <p class="section-intro">Every business works differently. We start with your processes to define what to build and where it can make a difference.</p>
+                        <div class="service-list">
+                            <article class="service-item">
+                                <span class="item-number" aria-hidden="true">01</span>
+                                <div><h3>Custom web applications</h3><p>Tools to organize your operations, reduce manual tasks, and keep track of your team’s work.</p></div>
+                            </article>
+                            <article class="service-item">
+                                <span class="item-number" aria-hidden="true">02</span>
+                                <div><h3>Platforms and portals</h3><p>Dedicated spaces for your customers, suppliers, and team to access information and manage requests.</p></div>
+                            </article>
+                            <article class="service-item">
+                                <span class="item-number" aria-hidden="true">03</span>
+                                <div><h3>Integrations and automation</h3><p>We connect your tools and information flows so your team spends less time on repetitive tasks.</p></div>
+                            </article>
+                        </div>
+                        <a class="text-link" href="#contacto">Let’s talk about what you need <span aria-hidden="true">↗</span></a>
+                    </section>
+
+                    <section class="journey-section projects-section" id="proyectos" aria-labelledby="projects-title">
+                        <p class="eyebrow">02 / Projects</p>
+                        <h2 id="projects-title">From a business need to a <span>practical solution.</span></h2>
+                        <p class="section-intro">Here’s what a project for your business could look like. These scenarios illustrate possible solutions, rather than client case studies.</p>
+                        <article class="project-example">
+                            <div class="d-flex flex-wrap gap-2 mb-3"><span class="project-label">Solution concept</span><span class="project-type">Customer experience</span></div>
+                            <h3>Bring your customers closer</h3>
+                            <dl class="project-brief">
+                                <dt>The need</dt><dd>Requests and documents are scattered across emails and conversations.</dd>
+                                <dt>The approach</dt><dd>A portal to access documents, submit requests, and track progress in one place.</dd>
+                            </dl>
+                        </article>
+                        <article class="project-example">
+                            <div class="d-flex flex-wrap gap-2 mb-3"><span class="project-label">Solution concept</span><span class="project-type">Internal operations</span></div>
+                            <h3>Keep your team in sync</h3>
+                            <dl class="project-brief">
+                                <dt>The need</dt><dd>Tracking work relies on spreadsheets and manually updating information.</dd>
+                                <dt>The approach</dt><dd>An application with shared tasks, owners, and statuses to coordinate day-to-day work.</dd>
+                            </dl>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-lg-6 journey-visual d-none d-lg-block" aria-hidden="true">
+                    <div class="visual-sticky">
+                        <partial name="_LaptopReference" />
+                        <p class="visual-caption">Ideas taking shape.<br /><span>Solutions that connect.</span></p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-</div>
+        </div>
+    </div>
+
+    <section class="page-section process-section" id="proceso" aria-labelledby="process-title">
+        <div class="container site-container">
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-7"><p class="eyebrow">03 / How we work</p><h2 id="process-title">A clear process.<br />A team <span>by your side.</span></h2></div>
+                <div class="col-lg-5"><p class="section-intro mb-0">Shared decisions and progress you can review. So you know what we’re building and why.</p></div>
+            </div>
+            <ol class="row g-4 list-unstyled process-list">
+                <li class="col-sm-6 col-lg-3"><div class="process-step h-100"><span class="step-number" aria-hidden="true">01</span><h3>Understand</h3><p>We listen to your team, explore your current process, and define the problem we need to solve.</p><p class="step-output">A shared goal and scope.</p></div></li>
+                <li class="col-sm-6 col-lg-3"><div class="process-step h-100"><span class="step-number" aria-hidden="true">02</span><h3>Design</h3><p>We map out flows and screens so you can explore how the solution will work before development starts.</p><p class="step-output">A proposal you can explore.</p></div></li>
+                <li class="col-sm-6 col-lg-3"><div class="process-step h-100"><span class="step-number" aria-hidden="true">03</span><h3>Develop</h3><p>We build in stages, test the workflows, and review progress with you to make adjustments along the way.</p><p class="step-output">Working increments to review together.</p></div></li>
+                <li class="col-sm-6 col-lg-3"><div class="process-step h-100"><span class="step-number" aria-hidden="true">04</span><h3>Launch</h3><p>We prepare for launch and work with you on what your team needs to start using the application.</p><p class="step-output">A launch with clear next steps.</p></div></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="page-section about-section" id="nosotros" aria-labelledby="about-title">
+        <div class="container site-container"><div class="row g-4 g-lg-5">
+            <div class="col-lg-6"><p class="eyebrow">04 / We are Webcanis</p><h2 id="about-title">A team you <span>can build with.</span></h2></div>
+            <div class="col-lg-6 about-copy">
+                <p class="about-lead">We’re a web application development team. We care about understanding how your business works and creating tools that make sense to the people who use them.</p>
+                <p>We work with you to connect business decisions with product decisions. Through direct communication, shared goals, and room to ask questions.</p>
+                <a class="text-link" href="#contacto">Let’s start with a conversation <span aria-hidden="true">↗</span></a>
+            </div>
+        </div></div>
+    </section>
+
+    <section class="page-section contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="container site-container"><div class="row g-4 g-lg-5">
+            <div class="col-lg-6">
+                <p class="eyebrow">05 / Let’s talk</p><h2 id="contact-title">What does <span>your business need?</span></h2>
+                <p class="section-intro">Tell us what you want to achieve or which process you’d like to improve. We can start there.</p>
+                <p class="contact-note" id="contact-status">Our contact form is coming soon. It’s currently unavailable and does not collect or send any information.</p>
+            </div>
+            <div class="col-lg-6">
+                @* No destination supplied: enable these fields only when sending is implemented. *@
+                <form aria-label="Tell us about your project" aria-describedby="contact-status"><fieldset disabled>
+                    <legend class="visually-hidden">Contact and project details</legend>
+                    <div class="row g-3">
+                        <div class="col-sm-6"><label class="form-label" for="contact-name">Your name</label><input class="form-control" id="contact-name" type="text" autocomplete="name" /></div>
+                        <div class="col-sm-6"><label class="form-label" for="contact-company">Company</label><input class="form-control" id="contact-company" type="text" autocomplete="organization" /></div>
+                        <div class="col-12"><label class="form-label" for="contact-email">Work email</label><input class="form-control" id="contact-email" type="email" autocomplete="email" /></div>
+                        <div class="col-12"><label class="form-label" for="contact-message">What would you like to solve?</label><textarea class="form-control" id="contact-message" rows="4" aria-describedby="message-help"></textarea><p class="form-text" id="message-help">Your current process, business need, or the idea you have in mind.</p></div>
+                        <div class="col-12"><button class="btn btn-primary rounded-pill" type="button" disabled>Tell us about your idea <span aria-hidden="true">↗</span></button></div>
+                    </div>
+                </fieldset></form>
+            </div>
+        </div></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container site-container d-flex flex-wrap justify-content-between align-items-center gap-4">
+        <div><span class="footer-brand">WEBCANIS</span><p class="mb-0">Web applications. Working relationships built on clarity.</p></div>
+        <nav class="d-flex flex-wrap gap-4" aria-label="Footer navigation"><a href="#nosotros">Our team</a><a href="#contacto">Contact</a><a href="#inicio">Back to top <span aria-hidden="true">↑</span></a></nav>
+        <p class="footer-copyright mb-0">© @DateTime.Now.Year Webcanis</p>
+    </div>
+</footer>
