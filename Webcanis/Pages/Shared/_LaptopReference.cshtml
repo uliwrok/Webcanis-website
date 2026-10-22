@@ -1,7 +1,20 @@
-@* Static Figma artwork only. Replace this partial with the future shared GLB stage. *@
-<div class="laptop-reference">
-    <img class="reference-laptop" src="~/images/laptop.png" width="4096" height="3302" alt="" />
-    <div class="reference-screen-position">
-        <img class="reference-screen" src="~/images/camera.png" width="1286" height="1600" alt="" />
+@model string
+@* These are the original Figma image layers, not the future 3D model. *@
+@if (Model == "home")
+{
+    <div class="laptop-home">
+        <img class="home-laptop" src="~/images/laptop.png" width="4096" height="3302" alt="" />
+        <div class="home-screen-rotation"><div class="home-screen-crop"><img src="~/images/camera.png" alt="" /></div></div>
     </div>
-</div>
+}
+else if (Model == "solutions")
+{
+    <div class="laptop-solutions">
+        <img class="front-laptop" src="~/images/story/laptop-front.png" alt="" />
+        <img class="front-screen" src="~/images/story/screen-front.png" width="3760" height="2016" alt="" />
+    </div>
+}
+else
+{
+    <div class="laptop-projects"><div class="closed-laptop-crop"><img src="~/images/story/laptop-closed.png" width="1946" height="1496" alt="" /></div></div>
+}

@@ -26,19 +26,26 @@ closes the Bootstrap mobile navigation after an anchor is selected.
 The contact destination is intentionally unset. The form is disabled and
 collects no data. No sending endpoint or success confirmation is implemented.
 
-## Future laptop model integration
+## Scroll compositions and future model integration
 
-The model remains at `artifacts/laptop/generic-laptop.glb` and is not loaded,
-modified, or copied into public assets. No WebGL dependency was added.
+Home, Solutions and Projects follow the supplied Figma frames; the sample browser
+bar is excluded. All copy remains in English. The global Bootstrap navbar stays
+fixed at the top of the page.
 
-`showcase-journey` groups Home, Solutions and Projects as one scroll boundary.
-Its Bootstrap visual column keeps the existing static artwork visible until
-Projects ends. `_LaptopReference.cshtml` owns that temporary artwork. Future
-integration can replace it with one shared stage without changing section IDs.
-Keep the content readable and interactive beside the stage; do not pin the text
-or intercept scrolling. How we work starts after the stage's boundary.
+`wwwroot/css/story.css` styles these three sections independently of the rest of
+the landing. On viewports at least 1100px wide and 680px high, `site.js` enables
+one sticky viewport. Each content layer fades and blurs in place as the user
+scrolls; reversing the scroll reverses the effect. Inactive content is inert.
+Navigation markers land in the fully readable portion of each scene.
 
-Below 992px, the artwork appears once in the hero and the content becomes a
-single column. Maintain a static fallback and reduced-motion behavior when
-implementing the model. Lighting, model loading and scroll-driven lid motion
-are intentionally deferred.
+The laptop image stage sits outside the content blur and crossfades between the
+three original reference poses. `_LaptopReference.cshtml` owns their image layers
+and crops. Callout dots and lines share a positioned, uniformly scaled group.
+The GLB at `artifacts/laptop/generic-laptop.glb` is not loaded or modified. Replace
+the image stage with the model in a future change; no WebGL dependency is present.
+
+Smaller or shorter viewports, reduced-motion preferences, and browsers without
+JavaScript get ordinary document sections with one static pose per section.
+Resize restores section IDs and removes inactive states. The remaining Process,
+About and Contact sections use ordinary scrolling. The contact form remains
+disabled and collects no data.
