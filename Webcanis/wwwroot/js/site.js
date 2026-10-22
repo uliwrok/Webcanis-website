@@ -1,3 +1,5 @@
+import { smoothstep } from './laptop-motion.mjs';
+
 const navigation = document.getElementById('main-navigation');
 navigation?.addEventListener('click', (event) => {
     if (event.target.closest('a') && window.matchMedia('(max-width: 991.98px)').matches) {
@@ -9,7 +11,7 @@ navigation?.addEventListener('click', (event) => {
 const journey = document.querySelector('.showcase-journey');
 if (journey) {
     const panels = [...journey.querySelectorAll('.story-panel')];
-    const poses = [...journey.querySelectorAll('.laptop-pose')];
+    let laptop = null;
     const desktop = window.matchMedia('(min-width: 1100px) and (min-height: 680px)');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const sectionIds = panels.map(panel => panel.id);
@@ -19,14 +21,12 @@ if (journey) {
     let scrollRange = 1;
     let framePending = false;
 
-    function smoothstep(start, end, value) {
-        const progress = Math.max(0, Math.min(1, (value - start) / (end - start)));
-        return progress * progress * (3 - 2 * progress);
-    }
-
     function render() {
         framePending = false;
-        if (!enabled) return;
+        if (!enabled) {
+            laptop?.update({ enhanced: false, time: 0 });
+            return;
+        }
         const time = Math.max(0, Math.min(3, -journey.getBoundingClientRect().top / scrollRange * 3));
         const visibility = [
             1 - smoothstep(.35, .95, time),
@@ -42,16 +42,11 @@ if (journey) {
             panel.inert = index !== active || opacity < .15;
             panel.classList.toggle('is-active', !panel.inert);
         });
-        // Crossfade reference poses independently: the laptop never receives the content blur.
-        const front = smoothstep(.95, 1.2, time);
-        const closed = smoothstep(1.95, 2.2, time);
-        [1 - front, front * (1 - closed), closed].forEach((opacity, index) => {
-            poses[index].style.opacity = opacity.toFixed(4);
-        });
+        laptop?.update({ enhanced: true, time });
     }
 
     function scheduleRender() {
-        if (enabled && !framePending) {
+        if (!framePending) {
             framePending = true;
             requestAnimationFrame(render);
         }
@@ -91,7 +86,6 @@ if (journey) {
                     panel.removeAttribute('style');
                     panel.classList.remove('is-active');
                 });
-                poses.forEach(pose => pose.removeAttribute('style'));
             }
         }
         if (enabled) {
@@ -99,8 +93,8 @@ if (journey) {
             canvas.style.setProperty('--callout-scale', canvas.clientWidth / 1728);
             scrollRange = Math.max(1, journey.offsetHeight - window.innerHeight);
             markers.forEach((marker, index) => { marker.style.top = `${scrollRange * stops[index]}px`; });
-            render();
         }
+        render();
     }
 
     window.addEventListener('scroll', scheduleRender, { passive: true });
@@ -120,4 +114,11 @@ if (journey) {
     reducedMotion.addEventListener('change', configure);
     configure();
     requestAnimationFrame(alignHash);
+    import('./laptop-model.js')
+        .then(module => module.createLaptopRenderer(journey))
+        .then(renderer => { laptop = renderer; scheduleRender(); })
+        .catch(error => {
+            journey.dataset.modelState = 'unavailable';
+            console.error('Laptop preview could not be loaded.', error);
+        });
 }

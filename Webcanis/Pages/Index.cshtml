@@ -29,13 +29,7 @@
     <div class="showcase-journey">
         <div class="story-stage">
             <div class="story-canvas">
-                @* One persistent image stage, kept separate from the fading content. No GLB loader. *@
-                <div class="laptop-stage" aria-hidden="true">
-                    @foreach (var pose in new[] { "home", "solutions", "projects" })
-                    {
-                        <div class="laptop-pose" data-pose="@pose"><partial name="_LaptopReference" model="pose" /></div>
-                    }
-                </div>
+                <div class="laptop-stage" aria-hidden="true" data-model-url="@Url.Content("~/models/generic-laptop.glb")"></div>
                 <section class="story-panel home-panel" id="inicio" aria-labelledby="hero-title">
                     <div class="scene-copy">
                         <div class="hero-copy">
@@ -55,7 +49,7 @@
                             <p>Ideas taking shape.<br />Solutions that connect.</p>
                         </div>
                     </div>
-                    <div class="scene-art" aria-hidden="true"><partial name="_LaptopReference" model='@("home")' /></div>
+                    <div class="scene-art" data-model-pose="home" aria-hidden="true"></div>
                 </section>
 
                 <section class="story-panel solutions-panel" id="soluciones" aria-labelledby="solutions-title">
@@ -75,7 +69,7 @@
                         <a class="text-link solutions-contact" href="#contacto">Let’s talk about what you need <img class="down-arrow" src="~/images/story/arrow-down.svg" alt="" /></a>
                         <div class="solutions-callout" aria-hidden="true"><p>Design concepts</p><div class="callout-marker solutions-callout-marker"><span class="callout-line-slot"><img src="~/images/story/callout-line.svg" alt="" /></span><img class="callout-dot" src="~/images/story/callout-dot.svg" alt="" /></div></div>
                     </div>
-                    <div class="scene-art" aria-hidden="true"><partial name="_LaptopReference" model='@("solutions")' /></div>
+                    <div class="scene-art" data-model-pose="solutions" aria-hidden="true"></div>
                 </section>
 
                 <section class="story-panel projects-panel" id="proyectos" aria-labelledby="projects-title">
@@ -88,7 +82,7 @@
                             <div class="col-md-4"><article class="project-example h-100"><div class="project-meta d-flex flex-wrap align-items-center"><span class="project-label">Solution concept</span><span class="project-type">Systems integration</span></div><h3>Connect the tools your business relies on</h3><dl class="project-brief"><dt>The need</dt><dd>Your team copies information between sales, billing, and operations tools, leading to duplicate work and inconsistent records.</dd><dt>The approach</dt><dd>An integration that keeps key information in sync and automates routine handoffs, with a shared view of updates and exceptions.</dd></dl></article></div>
                         </div>
                     </div>
-                    <div class="scene-art" aria-hidden="true"><partial name="_LaptopReference" model='@("projects")' /></div>
+                    <div class="scene-art" data-model-pose="projects" aria-hidden="true"></div>
                 </section>
             </div>
         </div>

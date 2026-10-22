@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/story.css" asp-append-version="true" />
+    <script type="importmap">
+        { "imports": { "three": "@Url.Content("~/lib/three/build/three.module.min.js")" } }
+    </script>
 </head>
 <body>
     @RenderBody()
     <script src="~/lib/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="module" src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>

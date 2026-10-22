@@ -26,26 +26,61 @@ closes the Bootstrap mobile navigation after an anchor is selected.
 The contact destination is intentionally unset. The form is disabled and
 collects no data. No sending endpoint or success confirmation is implemented.
 
-## Scroll compositions and future model integration
+## 3D laptop and scroll
 
-Home, Solutions and Projects follow the supplied Figma frames; the sample browser
-bar is excluded. All copy remains in English. The global Bootstrap navbar stays
-fixed at the top of the page.
+Home, Solutions and Projects follow the supplied Figma compositions. The sample
+browser bar is excluded, the navbar stays fixed, and all copy remains in English.
 
-`wwwroot/css/story.css` styles these three sections independently of the rest of
-the landing. On viewports at least 1100px wide and 680px high, `site.js` enables
-one sticky viewport. Each content layer fades and blurs in place as the user
-scrolls; reversing the scroll reverses the effect. Inactive content is inert.
-Navigation markers land in the fully readable portion of each scene.
+One GLB scene and one WebGL canvas replace all laptop images. The published asset
+is `wwwroot/models/generic-laptop.glb`, copied from the editable source in
+`artifacts/laptop/`. ASP.NET explicitly serves `.glb` as `model/gltf-binary`.
+Three.js 0.180.0 and the required addons are vendored under `wwwroot/lib/three/`
+with their MIT license; the page makes no CDN requests at runtime.
 
-The laptop image stage sits outside the content blur and crossfades between the
-three original reference poses. `_LaptopReference.cshtml` owns their image layers
-and crops. Callout dots and lines share a positioned, uniformly scaled group.
-The GLB at `artifacts/laptop/generic-laptop.glb` is not loaded or modified. Replace
-the image stage with the model in a future change; no WebGL dependency is present.
+`wwwroot/js/laptop-motion.mjs` defines the three reference poses in the original
+1728 × 1077 content coordinates. Between them, scroll continuously interpolates
+position, framing, rotation and the lid hinge. Home uses a slightly wider framing,
+Solutions holds the screen vertical, and Projects closes the lid with 2° of
+overtravel to seal the model's visible gap.
+`laptop-model.js` uses perspective framing, studio environment lighting and
+on-demand rendering capped at 1.5 device pixels per CSS pixel. It does not run
+an idle animation loop or play a separate animation over the manual hinge.
 
-Smaller or shorter viewports, reduced-motion preferences, and browsers without
-JavaScript get ordinary document sections with one static pose per section.
-Resize restores section IDs and removes inactive states. The remaining Process,
-About and Contact sections use ordinary scrolling. The contact form remains
-disabled and collects no data.
+On viewports at least 1100 × 680, `site.js` keeps the content stationary while it
+fades and blurs. The model stays outside that effect. Smaller viewports and
+reduced-motion preferences retain ordinary document scrolling; the same canvas
+is moved between the three static model slots, without creating more contexts.
+A WebGL/model-loading failure leaves the content usable with an unavailable note.
+The contact form remains disabled and collects no data.
+
+## Conditional screen images
+
+The screen starts empty and dark. Both embedded placeholder maps are removed;
+an unlit material keeps future images independent of studio reflections.
+The runtime screen is offset 0.6 mm in front of the exported solid gasket to
+prevent image occlusion, without changing the original GLB.
+
+When a business condition is defined, code in `wwwroot/js/` can use:
+
+```javascript
+const { setLaptopScreenImage } = await import('./laptop-model.js');
+await setLaptopScreenImage(condition ? '/images/projects/portal.webp' : null);
+```
+
+Use same-origin HTTP(S) assets, preferably 16:9 (1920 × 1080 or 1024 × 576).
+`null` clears the screen. Calls made before model loading are queued; during
+rapid condition changes only the latest request can replace the screen. Failed
+image loads reject the promise and preserve the previous image. Replaced and
+stale textures are disposed. No condition or screen image is selected by default.
+
+## Verification
+
+```powershell
+node Webcanis/tests/laptop-motion.test.mjs
+dotnet build Webcanis/Webcanis.csproj
+```
+
+The motion test checks pose endpoints, continuity, reverse scrubbing, hinge
+closure, and the published GLB's hierarchy and screen UVs. Browser checks cover
+actual model rendering, one-canvas reuse, image assignment/clearing, rapid image
+changes, local URL validation, and responsive navigation.
