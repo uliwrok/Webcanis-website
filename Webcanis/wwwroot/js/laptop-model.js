@@ -74,7 +74,7 @@ export async function createLaptopRenderer(journey) {
             if (material.metalness < .1) material.envMapIntensity = .15;
         }
     });
-    // Remove both embedded placeholder maps. No camera website or texture is shown initially.
+    // Remove both embedded placeholder maps before applying the selected local example.
     const originalScreen = screen.material;
     const oldTextures = new Set([originalScreen.map, originalScreen.emissiveMap].filter(Boolean));
     const oldImages = new Set([...oldTextures].map(texture => texture.image));

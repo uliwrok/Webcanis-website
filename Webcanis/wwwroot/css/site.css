@@ -52,7 +52,7 @@ a { color: inherit; text-underline-offset: .3em; }
 .navbar .nav-link { display: inline-flex; align-items: center; min-height: 44px; padding: .5rem .75rem; color: var(--heading-color); font-size: 1rem; }
 .navbar .nav-contact { border: 1px solid var(--heading-color); border-radius: 100px; padding-inline: 1.25rem; gap: 1.25rem; }
 .navbar .nav-link:hover { color: var(--accent-ink); }
-.navbar .nav-contact:hover { background: var(--heading-color); color: var(--surface-light); }
+.navbar .nav-contact:hover, .navbar .nav-contact:focus-visible { background: var(--brand-orange); border-color: var(--brand-orange); color: #fff; }
 .navbar-toggler { min-width: 48px; min-height: 48px; border-color: var(--line-color); }
 .navbar-collapse { padding-top: 1rem; }
 .navbar-nav { gap: .5rem; }
@@ -110,12 +110,6 @@ a, button { touch-action: manipulation; transition: color 160ms ease, background
 .reference-screen { position: absolute; top: 50%; left: 50%; width: 95.56%; height: 93.587%; object-fit: cover; transform: translate(-50%, -50%) rotate(3.33deg); }
 .hero-mobile-art { margin: 2.5rem 0 1.5rem; max-width: 36rem; }
 .page-section { padding-block: var(--space-section); }
-.process-section { background: var(--surface-light); }
-.process-list { margin-bottom: 0; }
-.process-step { display: flex; flex-direction: column; padding-top: 1.5rem; border-top: 1px solid var(--line-color); }
-.step-number { display: block; margin-bottom: 2.5rem; font: 2.5rem/1 'IBM Plex Mono', monospace; color: var(--accent-ink); }
-.process-step h3 { min-height: 2.5em; }
-.step-output { margin-top: auto; margin-bottom: 0; padding-top: 1rem; border-top: 1px solid var(--line-color); color: var(--heading-color); font-size: .875rem; }
 .about-section { background: var(--dark-surface); color: var(--dark-text); }
 .about-section .eyebrow, .about-section h2 span { color: var(--brand-orange); }
 .about-copy p { color: var(--dark-muted); }
@@ -149,7 +143,6 @@ a, button { touch-action: manipulation; transition: color 160ms ease, background
 @media (max-width: 575.98px) {
     .hero .btn, .hero .text-link { width: 100%; }
     .hero .text-link { justify-content: center; }
-    .process-step h3 { min-height: auto; }
     .step-number { margin-bottom: 1.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {

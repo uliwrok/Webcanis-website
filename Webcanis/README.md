@@ -53,9 +53,23 @@ is moved between the three static model slots, without creating more contexts.
 A WebGL/model-loading failure leaves the content usable with an unavailable note.
 The contact form remains disabled and collects no data.
 
+## How we work
+
+The four process stages share one pinned desktop section. Native scroll moves
+the subtitles across the canvas and raises the active stage; clicking a subtitle
+scrolls to the corresponding position. Arrow keys, Home and End select stages.
+Smaller screens use a compact clickable tab layout. Reduced motion disables
+pinning and scroll animation. Without JavaScript all descriptions
+remain readable. The future visual's space is intentionally empty.
+
+Motion checks: `node Webcanis/tests/process-motion.test.mjs`.
+
 ## Conditional screen images
 
-The screen starts empty and dark. Both embedded placeholder maps are removed;
+The screen starts with `images/solutions/example1.png`, including in Home.
+The three Solutions cards are keyboard-accessible buttons that select example1,
+example2 or example3 respectively. Selection persists while scrolling between
+sections, and only the latest image request can update the preview. Both embedded placeholder maps are removed;
 an unlit material keeps future images independent of studio reflections.
 The runtime screen is offset 0.6 mm in front of the exported solid gasket to
 prevent image occlusion, without changing the original GLB.
@@ -71,7 +85,7 @@ Use same-origin HTTP(S) assets, preferably 16:9 (1920 × 1080 or 1024 × 576).
 `null` clears the screen. Calls made before model loading are queued; during
 rapid condition changes only the latest request can replace the screen. Failed
 image loads reject the promise and preserve the previous image. Replaced and
-stale textures are disposed. No condition or screen image is selected by default.
+stale textures are disposed. The first Solutions card is selected by default.
 
 ## Verification
 

@@ -1,4 +1,6 @@
 import { smoothstep } from './laptop-motion.mjs';
+import './process.js';
+import { initializeSolutions } from './solutions.js';
 
 const navigation = document.getElementById('main-navigation');
 navigation?.addEventListener('click', (event) => {
@@ -115,7 +117,10 @@ if (journey) {
     configure();
     requestAnimationFrame(alignHash);
     import('./laptop-model.js')
-        .then(module => module.createLaptopRenderer(journey))
+        .then(async module => {
+            await initializeSolutions(module.setLaptopScreenImage);
+            return module.createLaptopRenderer(journey);
+        })
         .then(renderer => { laptop = renderer; scheduleRender(); })
         .catch(error => {
             journey.dataset.modelState = 'unavailable';
