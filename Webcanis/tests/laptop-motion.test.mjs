@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { getLaptopPose, laptopPoses } from '../wwwroot/js/laptop-motion.mjs';
+import { getLaptopPose, laptopPoses, getLaptopSceneTime, getLaptopPlayback } from '../wwwroot/js/laptop-motion.mjs';
 
 function assertPose(actual, expected) {
     for (const key of Object.keys(expected)) assert.ok(Math.abs(actual[key] - expected[key]) < 1e-9, key);
@@ -40,3 +40,23 @@ assert.ok(hinge.children.includes(gltf.nodes.indexOf(screen)));
 assert.ok('TEXCOORD_0' in gltf.meshes[screen.mesh].primitives[0].attributes);
 assert.ok(Math.abs(hinge.extras.open_angle_x - laptopPoses.home.lid) < .000001);
 console.log('Passed: endpoint poses, continuous reversible interpolation, lid closure, GLB hierarchy and screen UVs.');
+
+assert.deepEqual([0, 1.3, 2.3, 3].map(getLaptopSceneTime), [0, 1.3, 2.3, 3]);
+assert.equal(getLaptopSceneTime(.64), 0);
+assert.equal(getLaptopSceneTime(.65), 1.3);
+assert.equal(getLaptopSceneTime(1.79), 1.3);
+assert.equal(getLaptopSceneTime(1.8), 2.3);
+assert.equal(getLaptopSceneTime(2.79), 2.3);
+assert.equal(getLaptopSceneTime(2.8), 3);
+assert.equal(getLaptopSceneTime(-10), 0);
+assert.equal(getLaptopSceneTime(10), 3);
+for (const [from, to] of [[0, 1.3], [1.3, 2.3], [2.3, 1.3], [1.3, 0], [0, 2.3], [2.3, 3]]) {
+    assert.deepEqual(getLaptopPlayback(from, to, 0), { time: from, done: false });
+    const middle = getLaptopPlayback(from, to, 200);
+    assert.ok(middle.time > Math.min(from, to) && middle.time < Math.max(from, to));
+    // No additional scroll input is needed for the pose to reach its exact endpoint.
+    assert.deepEqual(getLaptopPlayback(from, to, 1800), { time: to, done: true });
+    assert.equal(getLaptopPlayback(middle.time, from, 0).time, middle.time);
+}
+assertPose(getLaptopPose(getLaptopPlayback(1.3, 2.3, 1800).time), laptopPoses.projects);
+console.log('Passed: laptop scene triggers, uninterrupted playback, reverse motion and continuous retargeting.');

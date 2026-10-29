@@ -19,3 +19,16 @@ export function getLaptopPose(time) {
     const front = blend(laptopPoses.home, laptopPoses.solutions, smoothstep(.35, 1.2, time));
     return blend(front, laptopPoses.projects, smoothstep(1.55, 2.2, time));
 }
+
+export function getLaptopSceneTime(scrollTime) {
+    if (scrollTime >= 2.8) return 3;
+    if (scrollTime >= 1.8) return 2.3;
+    if (scrollTime >= .65) return 1.3;
+    return 0;
+}
+
+export function getLaptopPlayback(from, to, elapsed) {
+    const duration = Math.min(1800, 900 * Math.max(.3, Math.abs(to - from)));
+    const fraction = Math.max(0, Math.min(1, elapsed / duration));
+    return { time: from + (to - from) * smoothstep(0, 1, fraction), done: fraction === 1 };
+}

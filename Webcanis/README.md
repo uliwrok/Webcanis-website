@@ -42,6 +42,10 @@ with their MIT license; the page makes no CDN requests at runtime.
 position, framing, rotation and the lid hinge. Home uses a slightly wider framing,
 Solutions holds the screen vertical, and Projects closes the lid with 2° of
 overtravel to seal the model's visible gap.
+Desktop scroll activates each scene transition. Laptop movement and content
+fading share timed playback that completes even after scrolling stops; reversing
+or changing the destination continues from the current pose. The native scroll
+range and section links are unchanged. No frames run when playback is settled.
 `laptop-model.js` uses perspective framing, studio environment lighting and
 on-demand rendering capped at 1.5 device pixels per CSS pixel. It does not run
 an idle animation loop or play a separate animation over the manual hinge.
@@ -56,11 +60,17 @@ The contact form remains disabled and collects no data.
 ## How we work
 
 The four process stages share one pinned desktop section. Native scroll moves
-the subtitles across the canvas and raises the active stage; clicking a subtitle
-scrolls to the corresponding position. Arrow keys, Home and End select stages.
+between stage triggers; each trigger plays its transition through to completion,
+even when scrolling stops. Subtitles and the vector illustration move together.
+Clicking a subtitle selects the corresponding stage. Arrow keys, Home and End
+also select stages. Fast changes retarget from the current animation frame.
+The illustration uses the original local `webcanis-process-morph.svg`, paused
+and explicitly timed to its four settled poses. Only transition intervals play;
+the autonomous eight-second loop and final Launch-to-Understand loop are skipped.
 Smaller screens use a compact clickable tab layout. Reduced motion disables
-pinning and scroll animation. Without JavaScript all descriptions
-remain readable. The future visual's space is intentionally empty.
+pinning and switches illustrations immediately without animation. The static
+SVG is the fallback if JavaScript or SVG animation is unavailable. Without JavaScript all descriptions
+remain readable.
 
 Motion checks: `node Webcanis/tests/process-motion.test.mjs`.
 

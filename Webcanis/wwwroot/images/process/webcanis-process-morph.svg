@@ -1,0 +1,1147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="448" viewBox="0 0 450 448" fill="none">
+  <g id="understand">
+    <svg x="4" y="0" width="442" height="448" viewBox="0 0 442 448" preserveAspectRatio="xMidYMid meet" fill="none">
+      <g id="frag-0-0-move" visibility="visible">
+        <g id="frag-0-0-rotate">
+          <g transform="translate(347.877 430.631)">
+            <g id="frag-0-0-scale">
+              <g transform="translate(-347.877 -430.631)">
+                <path d="M347 443C347 445.761 349.239 448 352 448C354.761 448 357 445.761 357 443H352H347ZM339.333 414V419C343.872 419 347 422.378 347 425.885H352H357C357 416.265 348.786 409 339.333 409V414ZM352 443H357V425.885H352H347V443H352ZM339.333 414V409H314V414V419H339.333V414Z" fill="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 347.877 430.631;0 347.877 430.631;13.474 347.877 430.631;13.474 347.877 430.631;13.474 347.877 430.631;0 347.877 430.631" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;77.492 8.421;77.492 8.421;77.492 8.421;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-3-move" visibility="visible">
+        <g id="frag-0-3-rotate">
+          <g transform="translate(308.644 405.794)">
+            <g id="frag-0-3-scale">
+              <g transform="translate(-308.644 -405.794)">
+                <path d="M314.5 414C307.596 414 302 408.404 302 401.5V384.5L349.5 366.331" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 308.644 405.794;0 308.644 405.794;-17.272 308.644 405.794;-17.272 308.644 405.794;-17.272 308.644 405.794;0 308.644 405.794" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;71.733 11.267;71.733 11.267;71.733 11.267;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-6-move" visibility="visible">
+        <g id="frag-0-6-rotate">
+          <g transform="translate(289.388 296.492)">
+            <g id="frag-0-6-scale">
+              <g transform="translate(-289.388 -296.492)">
+                <path d="M306.5 279L302 279C291.507 279 283 287.507 283 298C283 306.021 287.971 312.882 295 315.669" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 289.388 296.492;0 289.388 296.492;-14.229 289.388 296.492;-14.229 289.388 296.492;-14.229 289.388 296.492;0 289.388 296.492" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-0.123 -51.558;-0.123 -51.558;-0.123 -51.558;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-9-move" visibility="visible">
+        <g id="frag-0-9-rotate">
+          <g transform="translate(299.221 318.779)">
+            <g id="frag-0-9-scale">
+              <g transform="translate(-299.221 -318.779)">
+                <path d="M294.5 316C298.642 316 302 319.358 302 323.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 299.221 318.779;0 299.221 318.779;19.656 299.221 318.779;19.656 299.221 318.779;19.656 299.221 318.779;0 299.221 318.779" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-6.663 -38.419;-6.663 -38.419;-6.663 -38.419;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-12-move" visibility="visible">
+        <g id="frag-0-12-rotate">
+          <g transform="translate(347.343 360.400)">
+            <g id="frag-0-12-scale">
+              <g transform="translate(-347.343 -360.400)">
+                <path d="M347 367C349.761 367 352 364.761 352 362C352 359.239 349.761 357 347 357L302 344.5V323.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 347.343 360.400;0 347.343 360.400;16.518 347.343 360.400;16.518 347.343 360.400;16.518 347.343 360.400;0 347.343 360.400" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;13.920 39.858;13.920 39.858;13.920 39.858;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-15-move" visibility="visible">
+        <g id="frag-0-15-rotate">
+          <g transform="translate(310.375 271.986)">
+            <g id="frag-0-15-scale">
+              <g transform="translate(-310.375 -271.986)">
+                <path d="M305.5 279C309.642 279 313 275.642 313 271.5V200" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 310.375 271.986;0 310.375 271.986;-17.227 310.375 271.986;-17.227 310.375 271.986;-17.227 310.375 271.986;0 310.375 271.986" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-76.553 50.303;-76.553 50.303;-76.553 50.303;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-18-move" visibility="visible">
+        <g id="frag-0-18-rotate">
+          <g transform="translate(306.328 166.001)">
+            <g id="frag-0-18-scale">
+              <g transform="translate(-306.328 -166.001)">
+                <path d="M298.391 173.5L294.524 176.669L294.87 177.091L295.299 177.429L298.391 173.5ZM309.907 188.929C312.077 190.637 315.221 190.263 316.929 188.093C318.637 185.923 318.263 182.779 316.093 181.071L313 185L309.907 188.929ZM295 164H300C300 158.477 304.477 154 310 154V149V144C298.954 144 290 152.954 290 164H295ZM310 149V154C312.76 154 315.252 155.112 317.066 156.924L320.6 153.386L324.133 149.849C320.52 146.24 315.517 144 310 144V149ZM298.391 173.5L302.259 170.331C300.845 168.605 300 166.408 300 164H295H290C290 168.802 291.699 173.221 294.524 176.669L298.391 173.5ZM298.391 173.5L295.299 177.429L309.907 188.929L313 185L316.093 181.071L301.484 169.571L298.391 173.5Z" fill="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 306.328 166.001;0 306.328 166.001;-17.754 306.328 166.001;-17.754 306.328 166.001;-17.754 306.328 166.001;0 306.328 166.001" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-15.208 26.501;-15.208 26.501;-15.208 26.501;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-21-move" visibility="visible">
+        <g id="frag-0-21-rotate">
+          <g transform="translate(349.430 158.489)">
+            <g id="frag-0-21-scale">
+              <g transform="translate(-349.430 -158.489)">
+                <path d="M320 152.819L344.5 174.712C341.723 171.99 340 168.196 340 164C340 155.716 346.716 149 355 149C358.842 149 362.346 150.444 365 152.819L389.5 174.712" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 349.430 158.489;0 349.430 158.489;23.511 349.430 158.489;23.511 349.430 158.489;23.511 349.430 158.489;0 349.430 158.489" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-5.939 15.759;-5.939 15.759;-5.939 15.759;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-24-move" visibility="visible">
+        <g id="frag-0-24-rotate">
+          <g transform="translate(395.048 158.625)">
+            <g id="frag-0-24-scale">
+              <g transform="translate(-395.048 -158.625)">
+                <path d="M434 174.712L410.198 153C407.522 150.518 403.938 149 400 149C391.716 149 385 155.716 385 164C385 168.196 386.723 171.99 389.5 174.712" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 395.048 158.625;0 395.048 158.625;10.894 395.048 158.625;10.894 395.048 158.625;10.894 395.048 158.625;0 395.048 158.625" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;69.878 46.806;69.878 46.806;69.878 46.806;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-27-move" visibility="visible">
+        <g id="frag-0-27-rotate">
+          <g transform="translate(429.364 259.000)">
+            <g id="frag-0-27-scale">
+              <g transform="translate(-429.364 -259.000)">
+                <path d="M417 279C428.046 279 437 270.046 437 259C437 247.954 428.046 239 417 239" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 429.364 259.000;0 429.364 259.000;25.653 429.364 259.000;25.653 429.364 259.000;25.653 429.364 259.000;0 429.364 259.000" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-49.833 -63.845;-49.833 -63.845;-49.833 -63.845;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-30-move" visibility="visible">
+        <g id="frag-0-30-rotate">
+          <g transform="translate(338.782 251.761)">
+            <g id="frag-0-30-scale">
+              <g transform="translate(-338.782 -251.761)">
+                <path d="M349 239V229C349 222.373 343.627 217 337 217C330.373 217 325 222.373 325 229V276C325 282.627 330.373 288 337 288C343.627 288 349 282.627 349 276V254V239ZM349 239H415.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 338.782 251.761;0 338.782 251.761;-21.509 338.782 251.761;-21.509 338.782 251.761;-21.509 338.782 251.761;0 338.782 251.761" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-25.139 -49.582;-25.139 -49.582;-25.139 -49.582;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-33-move" visibility="visible">
+        <g id="frag-0-33-rotate">
+          <g transform="translate(337.000 251.000)">
+            <g id="frag-0-33-scale">
+              <g transform="translate(-337.000 -251.000)">
+                <rect x="333" y="235" width="8" height="32" rx="4" fill="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 337.000 251.000;0 337.000 251.000;18.499 337.000 251.000;18.499 337.000 251.000;18.499 337.000 251.000;0 337.000 251.000" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;38.937 30.399;38.937 30.399;38.937 30.399;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-36-move" visibility="visible">
+        <g id="frag-0-36-rotate">
+          <g transform="translate(109.123 430.631)">
+            <g id="frag-0-36-scale">
+              <g transform="translate(-109.123 -430.631)">
+                <path d="M110 443C110 445.761 107.761 448 105 448C102.239 448 100 445.761 100 443H105H110ZM117.667 414V419C113.128 419 110 422.378 110 425.885H105H100C100 416.265 108.214 409 117.667 409V414ZM105 443H100V425.885H105H110V443H105ZM117.667 414V409H143V414V419H117.667V414Z" fill="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 109.123 430.631;0 109.123 430.631;-6.857 109.123 430.631;-6.857 109.123 430.631;-6.857 109.123 430.631;0 109.123 430.631" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-1.148 -37.919;-1.148 -37.919;-1.148 -37.919;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-39-move" visibility="visible">
+        <g id="frag-0-39-rotate">
+          <g transform="translate(148.356 405.794)">
+            <g id="frag-0-39-scale">
+              <g transform="translate(-148.356 -405.794)">
+                <path d="M142.5 414C149.404 414 155 408.404 155 401.5V384.5L107.5 366.331" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 148.356 405.794;0 148.356 405.794;17.498 148.356 405.794;17.498 148.356 405.794;17.498 148.356 405.794;0 148.356 405.794" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-13.517 27.335;-13.517 27.335;-13.517 27.335;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-42-move" visibility="visible">
+        <g id="frag-0-42-rotate">
+          <g transform="translate(167.612 296.492)">
+            <g id="frag-0-42-scale">
+              <g transform="translate(-167.612 -296.492)">
+                <path d="M150.5 279L155 279C165.493 279 174 287.507 174 298C174 306.021 169.029 312.882 162 315.669" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 167.612 296.492;0 167.612 296.492;-0.854 167.612 296.492;-0.854 167.612 296.492;-0.854 167.612 296.492;0 167.612 296.492" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-43.885 -57.629;-43.885 -57.629;-43.885 -57.629;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-45-move" visibility="visible">
+        <g id="frag-0-45-rotate">
+          <g transform="translate(157.779 318.779)">
+            <g id="frag-0-45-scale">
+              <g transform="translate(-157.779 -318.779)">
+                <path d="M162.5 316C158.358 316 155 319.358 155 323.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 157.779 318.779;0 157.779 318.779;23.824 157.779 318.779;23.824 157.779 318.779;23.824 157.779 318.779;0 157.779 318.779" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-13.946 -55.268;-13.946 -55.268;-13.946 -55.268;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-48-move" visibility="visible">
+        <g id="frag-0-48-rotate">
+          <g transform="translate(109.657 360.400)">
+            <g id="frag-0-48-scale">
+              <g transform="translate(-109.657 -360.400)">
+                <path d="M110 367C107.239 367 105 364.761 105 362C105 359.239 107.239 357 110 357L155 344.5V323.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 109.657 360.400;0 109.657 360.400;-11.680 109.657 360.400;-11.680 109.657 360.400;-11.680 109.657 360.400;0 109.657 360.400" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;65.964 65.052;65.964 65.052;65.964 65.052;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-51-move" visibility="visible">
+        <g id="frag-0-51-rotate">
+          <g transform="translate(146.625 273.292)">
+            <g id="frag-0-51-scale">
+              <g transform="translate(-146.625 -273.292)">
+                <path d="M151.5 279C147.358 279 144 275.642 144 271.5V223.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 146.625 273.292;0 146.625 273.292;17.129 146.625 273.292;17.129 146.625 273.292;17.129 146.625 273.292;0 146.625 273.292" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-60.140 -64.255;-60.140 -64.255;-60.140 -64.255;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-54-move" visibility="visible">
+        <g id="frag-0-54-rotate">
+          <g transform="translate(135.207 195.516)">
+            <g id="frag-0-54-scale">
+              <g transform="translate(-135.207 -195.516)">
+                <path d="M90.5 176.378C98.1047 170.498 107.644 167 118 167C142.853 167 163 187.147 163 212C163 227.023 155.638 240.326 144.326 248.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 135.207 195.516;0 135.207 195.516;-8.897 135.207 195.516;-8.897 135.207 195.516;-8.897 135.207 195.516;0 135.207 195.516" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;50.175 -45.166;50.175 -45.166;50.175 -45.166;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-57-move" visibility="visible">
+        <g id="frag-0-57-rotate">
+          <g transform="translate(87.223 182.749)">
+            <g id="frag-0-57-scale">
+              <g transform="translate(-87.223 -182.749)">
+                <path d="M108 212C108 187.147 87.8528 167 63 167H17.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 87.223 182.749;0 87.223 182.749;-23.416 87.223 182.749;-23.416 87.223 182.749;-23.416 87.223 182.749;0 87.223 182.749" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;72.434 -70.047;72.434 -70.047;72.434 -70.047;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-60-move" visibility="visible">
+        <g id="frag-0-60-rotate">
+          <g transform="translate(92.251 268.029)">
+            <g id="frag-0-60-scale">
+              <g transform="translate(-92.251 -268.029)">
+                <path d="M63 288C87.8528 288 108 267.853 108 243V212" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 92.251 268.029;0 92.251 268.029;17.211 92.251 268.029;17.211 92.251 268.029;17.211 92.251 268.029;0 92.251 268.029" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;-15.705 48.287;-15.705 48.287;-15.705 48.287;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-63-move" visibility="visible">
+        <g id="frag-0-63-rotate">
+          <g transform="translate(9.632 171.632)">
+            <g id="frag-0-63-scale">
+              <g transform="translate(-9.632 -171.632)">
+                <path d="M5 179.5C5 172.596 10.5964 167 17.5 167" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 9.632 171.632;0 9.632 171.632;14.281 9.632 171.632;14.281 9.632 171.632;14.281 9.632 171.632;0 9.632 171.632" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;59.717 9.143;59.717 9.143;59.717 9.143;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-66-move" visibility="visible">
+        <g id="frag-0-66-rotate">
+          <g transform="translate(128.000 251.000)">
+            <g id="frag-0-66-scale">
+              <g transform="translate(-128.000 -251.000)">
+                <rect x="124" y="235" width="8" height="32" rx="4" fill="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 128.000 251.000;0 128.000 251.000;19.948 128.000 251.000;19.948 128.000 251.000;19.948 128.000 251.000;0 128.000 251.000" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;27.483 6.606;27.483 6.606;27.483 6.606;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-0-69-move" visibility="visible">
+        <g id="frag-0-69-rotate">
+          <g transform="translate(222.025 104.673)">
+            <g id="frag-0-69-scale">
+              <g transform="translate(-222.025 -104.673)">
+                <path d="M123 80C123 38.5786 167.772 5 223 5C278.228 5 323 38.5786 323 80C323 111.475 297.148 138.422 260.5 149.548L267 185L236 154.372C231.745 154.786 227.406 155 223 155C218.594 155 214.255 154.786 210 154.372L180.5 185L185.5 149.548C148.852 138.422 123 111.475 123 80Z" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="1;1;0.82;0.02;0.02;1" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0 222.025 104.673;0 222.025 104.673;7.495 222.025 104.673;7.495 222.025 104.673;7.495 222.025 104.673;0 222.025 104.673" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="0 0;0 0;73.299 -40.206;73.299 -40.206;73.299 -40.206;0 0" keyTimes="0;0.15;0.195;0.245;0.95;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="visible;hidden;visible;visible" keyTimes="0;0.245;0.95;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+    </svg>
+  </g>
+  <g id="design">
+    <svg x="31.5" y="69" width="387" height="310" viewBox="0 0 387 310" preserveAspectRatio="xMidYMid meet" fill="none">
+      <g id="frag-1-72-move" visibility="hidden">
+        <g id="frag-1-72-rotate">
+          <g transform="translate(45.379 59.539)">
+            <g id="frag-1-72-scale">
+              <g transform="translate(-45.379 -59.539)">
+                <path d="M301.5 54.5551H37C32.0294 54.5551 28 58.5846 28 63.5551V92.5551" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-8.773 45.379 59.539;-8.773 45.379 59.539;0 45.379 59.539;0 45.379 59.539;-8.773 45.379 59.539;-8.773 45.379 59.539;-8.773 45.379 59.539" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="58.775 -49.792;58.775 -49.792;0 0;0 0;58.775 -49.792;58.775 -49.792;58.775 -49.792" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-75-move" visibility="hidden">
+        <g id="frag-1-75-rotate">
+          <g transform="translate(328.279 259.518)">
+            <g id="frag-1-75-scale">
+              <g transform="translate(-328.279 -259.518)">
+                <path d="M138 273.555H333C337.971 273.555 342 269.526 342 264.555V63.5551" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="21.947 328.279 259.518;21.947 328.279 259.518;0 328.279 259.518;0 328.279 259.518;21.947 328.279 259.518;21.947 328.279 259.518;21.947 328.279 259.518" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-56.651 -14.543;-56.651 -14.543;0 0;0 0;-56.651 -14.543;-56.651 -14.543;-56.651 -14.543" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-78-move" visibility="hidden">
+        <g id="frag-1-78-rotate">
+          <g transform="translate(31.852 264.808)">
+            <g id="frag-1-78-scale">
+              <g transform="translate(-31.852 -264.808)">
+                <path d="M28 164.055V264.555C28 269.526 32.0294 273.555 37 273.555H44.5" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="17.519 31.852 264.808;17.519 31.852 264.808;0 31.852 264.808;0 31.852 264.808;17.519 31.852 264.808;17.519 31.852 264.808;17.519 31.852 264.808" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-62.225 13.075;-62.225 13.075;0 0;0 0;-62.225 13.075;-62.225 13.075;-62.225 13.075" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-81-move" visibility="hidden">
+        <g id="frag-1-81-rotate">
+          <g transform="translate(245.934 221.903)">
+            <g id="frag-1-81-scale">
+              <g transform="translate(-245.934 -221.903)">
+                <path d="M173.471 245.555H320.529C322.998 245.555 325 244.672 325 243.583V199.528C325 198.438 322.998 197.555 320.529 197.555H173.471C171.002 197.555 169 198.438 169 199.528V243.583C169 244.672 171.002 245.555 173.471 245.555Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-18.684 245.934 221.903;-18.684 245.934 221.903;0 245.934 221.903;0 245.934 221.903;-18.684 245.934 221.903;-18.684 245.934 221.903;-18.684 245.934 221.903" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="27.839 4.859;27.839 4.859;0 0;0 0;27.839 4.859;27.839 4.859;27.839 4.859" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-84-move" visibility="hidden">
+        <g id="frag-1-84-rotate">
+          <g transform="translate(261.293 135.012)">
+            <g id="frag-1-84-scale">
+              <g transform="translate(-261.293 -135.012)">
+                <path d="M293.5 99.5551H321.331C323.357 99.5551 325 100.898 325 102.555V169.555C325 171.212 323.357 172.555 321.331 172.555H200.669C198.643 172.555 197 171.212 197 169.555V102.555C197 100.898 198.643 99.5551 200.669 99.5551H249" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="21.598 261.293 135.012;21.598 261.293 135.012;0 261.293 135.012;0 261.293 135.012;21.598 261.293 135.012;21.598 261.293 135.012;21.598 261.293 135.012" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="67.782 -17.113;67.782 -17.113;0 0;0 0;67.782 -17.113;67.782 -17.113;67.782 -17.113" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-87-move" visibility="hidden">
+        <g id="frag-1-87-rotate">
+          <g transform="translate(113.087 160.964)">
+            <g id="frag-1-87-scale">
+              <g transform="translate(-113.087 -160.964)">
+                <path d="M111 113.555H120.24M45 164.555V169.065M45 178.086V182.596C45 184.23 46.3603 185.555 48.0382 185.555H56.3652M73.0191 185.555H89.673M106.327 185.555H122.981M139.635 185.555H147.962C149.64 185.555 151 184.23 151 182.596V174.336M151 157.815V141.295M151 124.774V116.514C151 114.88 149.64 113.555 147.962 113.555H138.721" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-13.161 113.087 160.964;-13.161 113.087 160.964;0 113.087 160.964;0 113.087 160.964;-13.161 113.087 160.964;-13.161 113.087 160.964;-13.161 113.087 160.964" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-23.876 45.167;-23.876 45.167;0 0;0 0;-23.876 45.167;-23.876 45.167;-23.876 45.167" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-90-move" visibility="hidden">
+        <g id="frag-1-90-rotate">
+          <g transform="translate(57.276 129.077)">
+            <g id="frag-1-90-scale">
+              <g transform="translate(-57.276 -129.077)">
+                <path d="M8.03822 164.555H107.962C109.64 164.555 111 163.23 111 161.596V95.514C111 93.8799 109.64 92.5551 107.962 92.5551H8.03822C6.36026 92.5551 5 93.8799 5 95.514V161.596C5 163.23 6.36026 164.555 8.03822 164.555Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-3.077 57.276 129.077;-3.077 57.276 129.077;0 57.276 129.077;0 57.276 129.077;-3.077 57.276 129.077;-3.077 57.276 129.077;-3.077 57.276 129.077" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="49.380 -31.716;49.380 -31.716;0 0;0 0;49.380 -31.716;49.380 -31.716;49.380 -31.716" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-93-move" visibility="hidden">
+        <g id="frag-1-93-rotate">
+          <g transform="translate(104.500 225.055)">
+            <g id="frag-1-93-scale">
+              <g transform="translate(-104.500 -225.055)">
+                <path d="M58 234.463V243.87C58 244.801 59.1934 245.555 60.6656 245.555H67.9713M58 215.648V206.24C58 205.309 59.1934 204.555 60.6656 204.555H67.9713M82.5828 204.555H97.1943M111.806 204.555H126.417M141.029 204.555H148.334C149.807 204.555 151 205.309 151 206.24V215.648M151 234.463V243.87C151 244.801 149.807 245.555 148.334 245.555H141.029M126.417 245.555H111.806M97.1943 245.555H82.5828" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-6.658 104.500 225.055;-6.658 104.500 225.055;0 104.500 225.055;0 104.500 225.055;-6.658 104.500 225.055;-6.658 104.500 225.055;-6.658 104.500 225.055" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-39.214 45.796;-39.214 45.796;0 0;0 0;-39.214 45.796;-39.214 45.796;-39.214 45.796" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-96-move" visibility="hidden">
+        <g id="frag-1-96-rotate">
+          <g transform="translate(90.865 284.352)">
+            <g id="frag-1-96-scale">
+              <g transform="translate(-90.865 -284.352)">
+                <path d="M47.6656 304.555H135.334C136.807 304.555 138 303.801 138 302.87V265.24C138 264.309 136.807 263.555 135.334 263.555H47.6656C46.1934 263.555 45 264.309 45 265.24V302.87C45 303.801 46.1934 304.555 47.6656 304.555Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-16.794 90.865 284.352;-16.794 90.865 284.352;0 90.865 284.352;0 90.865 284.352;-16.794 90.865 284.352;-16.794 90.865 284.352;-16.794 90.865 284.352" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-46.602 -56.467;-46.602 -56.467;0 0;0 0;-46.602 -56.467;-46.602 -56.467;-46.602 -56.467" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-99-move" visibility="hidden">
+        <g id="frag-1-99-rotate">
+          <g transform="translate(45.719 64.555)">
+            <g id="frag-1-99-scale">
+              <g transform="translate(-45.719 -64.555)">
+                <path d="M278.5 74.5551H37C32.0294 74.5551 28 74.1871 28 73.7332V55.377C28 54.9231 32.0294 54.5551 37 54.5551H302" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="28.681 45.719 64.555;28.681 45.719 64.555;0 45.719 64.555;0 45.719 64.555;28.681 45.719 64.555;28.681 45.719 64.555;28.681 45.719 64.555" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-62.242 2.055;-62.242 2.055;0 0;0 0;-62.242 2.055;-62.242 2.055;-62.242 2.055" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-102-move" visibility="hidden">
+        <g id="frag-1-102-rotate">
+          <g transform="translate(338.148 73.493)">
+            <g id="frag-1-102-scale">
+              <g transform="translate(-338.148 -73.493)">
+                <path d="M325.5 74.5551H333C337.971 74.5551 342 74.1871 342 73.7332V59.5551" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-24.220 338.148 73.493;-24.220 338.148 73.493;0 338.148 73.493;0 338.148 73.493;-24.220 338.148 73.493;-24.220 338.148 73.493;-24.220 338.148 73.493" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-81.311 70.758;-81.311 70.758;0 0;0 0;-81.311 70.758;-81.311 70.758;-81.311 70.758" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-105-move" visibility="hidden">
+        <g id="frag-1-105-rotate">
+          <g transform="translate(244.250 222.555)">
+            <g id="frag-1-105-scale">
+              <g transform="translate(-244.250 -222.555)">
+                <path d="M185.5 222.555C185.5 222.555 199 235.555 214.875 222.555C230.75 209.555 244.25 222.555 244.25 222.555C244.25 222.555 261.5 236.055 273.625 222.555C285.75 209.055 303 222.555 303 222.555" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-13.834 244.250 222.555;-13.834 244.250 222.555;0 244.250 222.555;0 244.250 222.555;-13.834 244.250 222.555;-13.834 244.250 222.555;-13.834 244.250 222.555" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="66.977 -41.779;66.977 -41.779;0 0;0 0;66.977 -41.779;66.977 -41.779;66.977 -41.779" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-108-move" visibility="hidden">
+        <g id="frag-1-108-rotate">
+          <g transform="translate(68.000 142.282)">
+            <g id="frag-1-108-scale">
+              <g transform="translate(-68.000 -142.282)">
+                <path d="M53 151.555C53 143.271 59.7157 136.555 68 136.555C76.2843 136.555 83 143.271 83 151.555" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="18.354 68.000 142.282;18.354 68.000 142.282;0 68.000 142.282;0 68.000 142.282;18.354 68.000 142.282;18.354 68.000 142.282;18.354 68.000 142.282" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="35.097 57.719;35.097 57.719;0 0;0 0;35.097 57.719;35.097 57.719;35.097 57.719" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-111-move" visibility="hidden">
+        <g id="frag-1-111-rotate">
+          <g transform="translate(68.154 126.555)">
+            <g id="frag-1-111-scale">
+              <g transform="translate(-68.154 -126.555)">
+                <path d="M78 126.555C78 132.078 73.5228 136.555 68 136.555C62.4772 136.555 58 132.078 58 126.555C58 121.032 62.4772 116.555 68 116.555C73.5228 116.555 78 121.032 78 126.555Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-24.186 68.154 126.555;-24.186 68.154 126.555;0 68.154 126.555;0 68.154 126.555;-24.186 68.154 126.555;-24.186 68.154 126.555;-24.186 68.154 126.555" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="5.040 44.410;5.040 44.410;0 0;0 0;5.040 44.410;5.040 44.410;5.040 44.410" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-114-move" visibility="hidden">
+        <g id="frag-1-114-rotate">
+          <g transform="translate(359.848 25.728)">
+            <g id="frag-1-114-scale">
+              <g transform="translate(-359.848 -25.728)">
+                <path d="M249.193 97.8237L360.42 6.36586C362.98 4.26124 366.761 4.63003 368.865 7.18957L380.298 21.093C382.402 23.6525 382.033 27.4336 379.474 29.5382L268.247 120.996L230.209 132.206L249.193 97.8237Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="22.059 359.848 25.728;22.059 359.848 25.728;0 359.848 25.728;0 359.848 25.728;22.059 359.848 25.728;22.059 359.848 25.728;22.059 359.848 25.728" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-39.037 36.405;-39.037 36.405;0 0;0 0;-39.037 36.405;-39.037 36.405;-39.037 36.405" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-1-117-move" visibility="hidden">
+        <g id="frag-1-117-rotate">
+          <g transform="translate(241.673 122.780)">
+            <g id="frag-1-117-scale">
+              <g transform="translate(-241.673 -122.780)">
+                <path d="M236.647 118.497C238.742 119.226 240.67 120.522 242.182 122.361C243.694 124.2 244.593 126.342 244.904 128.538" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-3.226 241.673 122.780;-3.226 241.673 122.780;0 241.673 122.780;0 241.673 122.780;-3.226 241.673 122.780;-3.226 241.673 122.780;-3.226 241.673 122.780" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-60.875 -2.684;-60.875 -2.684;0 0;0 0;-60.875 -2.684;-60.875 -2.684;-60.875 -2.684" keyTimes="0;0.2;0.265;0.39375;0.44375;0.49375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.200000;0.493750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+    </svg>
+  </g>
+  <g id="develop">
+    <svg x="17" y="61" width="416" height="326" viewBox="0 0 416 326" preserveAspectRatio="xMidYMid meet" fill="none">
+      <g id="frag-2-120-move" visibility="hidden">
+        <g id="frag-2-120-rotate">
+          <g transform="translate(275.203 200.768)">
+            <g id="frag-2-120-scale">
+              <g transform="translate(-275.203 -200.768)">
+                <path d="M153 321H401C406.523 321 411 316.523 411 311V87C411 81.4772 406.523 77 401 77H153C147.477 77 143 81.4772 143 87V311C143 316.523 147.477 321 153 321Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="22.579 275.203 200.768;22.579 275.203 200.768;0 275.203 200.768;0 275.203 200.768;22.579 275.203 200.768;22.579 275.203 200.768;22.579 275.203 200.768" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="13.406 5.923;13.406 5.923;0 0;0 0;13.406 5.923;13.406 5.923;13.406 5.923" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-123-move" visibility="hidden">
+        <g id="frag-2-123-rotate">
+          <g transform="translate(18.500 308.500)">
+            <g id="frag-2-123-scale">
+              <g transform="translate(-18.500 -308.500)">
+                <path d="M228 321H15C9.47716 321 5 316.523 5 311V306C5 300.477 9.47715 296 15 296H142" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-18.982 18.500 308.500;-18.982 18.500 308.500;0 18.500 308.500;0 18.500 308.500;-18.982 18.500 308.500;-18.982 18.500 308.500;-18.982 18.500 308.500" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="72.662 -38.935;72.662 -38.935;0 0;0 0;72.662 -38.935;72.662 -38.935;72.662 -38.935" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-126-move" visibility="hidden">
+        <g id="frag-2-126-rotate">
+          <g transform="translate(84.000 228.180)">
+            <g id="frag-2-126-scale">
+              <g transform="translate(-84.000 -228.180)">
+                <path d="M39 256C39 231.147 59.1472 211 84 211C108.853 211 129 231.147 129 256" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="29.242 84.000 228.180;29.242 84.000 228.180;0 84.000 228.180;0 84.000 228.180;29.242 84.000 228.180;29.242 84.000 228.180;29.242 84.000 228.180" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="63.200 23.551;63.200 23.551;0 0;0 0;63.200 23.551;63.200 23.551;63.200 23.551" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-129-move" visibility="hidden">
+        <g id="frag-2-129-rotate">
+          <g transform="translate(54.000 265.273)">
+            <g id="frag-2-129-scale">
+              <g transform="translate(-54.000 -265.273)">
+                <path d="M69 256C69 264.284 62.2843 271 54 271C45.7157 271 39 264.284 39 256" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-17.919 54.000 265.273;-17.919 54.000 265.273;0 54.000 265.273;0 54.000 265.273;-17.919 54.000 265.273;-17.919 54.000 265.273;-17.919 54.000 265.273" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="30.375 -7.868;30.375 -7.868;0 0;0 0;30.375 -7.868;30.375 -7.868;30.375 -7.868" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-132-move" visibility="hidden">
+        <g id="frag-2-132-rotate">
+          <g transform="translate(84.000 265.273)">
+            <g id="frag-2-132-scale">
+              <g transform="translate(-84.000 -265.273)">
+                <path d="M99 256C99 264.284 92.2843 271 84 271C75.7157 271 69 264.284 69 256" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-0.700 84.000 265.273;-0.700 84.000 265.273;0 84.000 265.273;0 84.000 265.273;-0.700 84.000 265.273;-0.700 84.000 265.273;-0.700 84.000 265.273" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="22.925 -69.884;22.925 -69.884;0 0;0 0;22.925 -69.884;22.925 -69.884;22.925 -69.884" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-135-move" visibility="hidden">
+        <g id="frag-2-135-rotate">
+          <g transform="translate(114.000 265.273)">
+            <g id="frag-2-135-scale">
+              <g transform="translate(-114.000 -265.273)">
+                <path d="M129 256C129 264.284 122.284 271 114 271C105.716 271 99 264.284 99 256" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-3.260 114.000 265.273;-3.260 114.000 265.273;0 114.000 265.273;0 114.000 265.273;-3.260 114.000 265.273;-3.260 114.000 265.273;-3.260 114.000 265.273" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="48.328 -46.466;48.328 -46.466;0 0;0 0;48.328 -46.466;48.328 -46.466;48.328 -46.466" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-138-move" visibility="hidden">
+        <g id="frag-2-138-rotate">
+          <g transform="translate(30.000 107.971)">
+            <g id="frag-2-138-scale">
+              <g transform="translate(-30.000 -107.971)">
+                <path d="M39 125C30.7157 125 24 118.284 24 110C24 101.716 30.7157 95 39 95V41" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-11.200 30.000 107.971;-11.200 30.000 107.971;0 30.000 107.971;0 30.000 107.971;-11.200 30.000 107.971;-11.200 30.000 107.971;-11.200 30.000 107.971" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-6.315 26.057;-6.315 26.057;0 0;0 0;-6.315 26.057;-6.315 26.057;-6.315 26.057" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-141-move" visibility="hidden">
+        <g id="frag-2-141-rotate">
+          <g transform="translate(24.138 178.745)">
+            <g id="frag-2-141-scale">
+              <g transform="translate(-24.138 -178.745)">
+                <path d="M14 199C14 184.26 25.1929 172.311 39 172.311V120" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-28.782 24.138 178.745;-28.782 24.138 178.745;0 24.138 178.745;0 24.138 178.745;-28.782 24.138 178.745;-28.782 24.138 178.745;-28.782 24.138 178.745" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-74.132 -3.785;-74.132 -3.785;0 0;0 0;-74.132 -3.785;-74.132 -3.785;-74.132 -3.785" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-144-move" visibility="hidden">
+        <g id="frag-2-144-rotate">
+          <g transform="translate(114.849 14.186)">
+            <g id="frag-2-144-scale">
+              <g transform="translate(-114.849 -14.186)">
+                <path d="M158.5 7.6391L117.5 31.6088C120.858 28.8579 123 24.6792 123 20C123 11.7157 116.284 5 108 5C104.844 5 101.916 5.97455 99.5 7.6391" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="25.189 114.849 14.186;25.189 114.849 14.186;0 114.849 14.186;0 114.849 14.186;25.189 114.849 14.186;25.189 114.849 14.186;25.189 114.849 14.186" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-59.659 -65.220;-59.659 -65.220;0 0;0 0;-59.659 -65.220;-59.659 -65.220;-59.659 -65.220" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-147-move" visibility="hidden">
+        <g id="frag-2-147-rotate">
+          <g transform="translate(48.654 28.465)">
+            <g id="frag-2-147-scale">
+              <g transform="translate(-48.654 -28.465)">
+                <path d="M39 41C39 35.443 42.0217 30.5919 46.5117 28M46.5117 28C47.7983 27.2572 49.2054 26.7 50.6966 26.3649M46.5117 28L50.6966 26.3649M50.6966 26.3649C51.7595 26.126 52.865 26 54 26M50.6966 26.3649L104 5.53918" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="20.052 48.654 28.465;20.052 48.654 28.465;0 48.654 28.465;0 48.654 28.465;20.052 48.654 28.465;20.052 48.654 28.465;20.052 48.654 28.465" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-17.902 -21.740;-17.902 -21.740;0 0;0 0;-17.902 -21.740;-17.902 -21.740;-17.902 -21.740" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-150-move" visibility="hidden">
+        <g id="frag-2-150-rotate">
+          <g transform="translate(173.581 14.199)">
+            <g id="frag-2-150-scale">
+              <g transform="translate(-173.581 -14.199)">
+                <path d="M217.5 7.6391L177.5 30.7121C180.277 27.9898 182 24.1961 182 20C182 11.7157 175.284 5 167 5C162.912 5 159.206 6.63548 156.5 9.28785" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-2.711 173.581 14.199;-2.711 173.581 14.199;0 173.581 14.199;0 173.581 14.199;-2.711 173.581 14.199;-2.711 173.581 14.199;-2.711 173.581 14.199" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-0.368 -12.256;-0.368 -12.256;0 0;0 0;-0.368 -12.256;-0.368 -12.256;-0.368 -12.256" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-153-move" visibility="hidden">
+        <g id="frag-2-153-rotate">
+          <g transform="translate(230.929 16.318)">
+            <g id="frag-2-153-scale">
+              <g transform="translate(-230.929 -16.318)">
+                <path d="M215.5 77V43.5L235.5 31.6088C238.858 28.8579 241 24.6792 241 20C241 11.7157 234.284 5 226 5C221.912 5 218.206 6.63548 215.5 9.28785" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-26.067 230.929 16.318;-26.067 230.929 16.318;0 230.929 16.318;0 230.929 16.318;-26.067 230.929 16.318;-26.067 230.929 16.318;-26.067 230.929 16.318" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="1.954 -32.832;1.954 -32.832;0 0;0 0;1.954 -32.832;1.954 -32.832;1.954 -32.832" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-156-move" visibility="hidden">
+        <g id="frag-2-156-rotate">
+          <g transform="translate(104.385 108.000)">
+            <g id="frag-2-156-scale">
+              <g transform="translate(-104.385 -108.000)">
+                <path d="M129 108C129 121.807 117.807 133 104 133C90.1929 133 79 121.807 79 108C79 94.1929 90.1929 83 104 83C117.807 83 129 94.1929 129 108Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="12.410 104.385 108.000;12.410 104.385 108.000;0 104.385 108.000;0 104.385 108.000;12.410 104.385 108.000;12.410 104.385 108.000;12.410 104.385 108.000" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="61.356 -28.782;61.356 -28.782;0 0;0 0;61.356 -28.782;61.356 -28.782;61.356 -28.782" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-159-move" visibility="hidden">
+        <g id="frag-2-159-rotate">
+          <g transform="translate(104.000 108.000)">
+            <g id="frag-2-159-scale">
+              <g transform="translate(-104.000 -108.000)">
+                <rect x="100" y="92" width="8" height="32" rx="4" fill="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-22.366 104.000 108.000;-22.366 104.000 108.000;0 104.000 108.000;0 104.000 108.000;-22.366 104.000 108.000;-22.366 104.000 108.000;-22.366 104.000 108.000" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="44.887 -44.575;44.887 -44.575;0 0;0 0;44.887 -44.575;44.887 -44.575;44.887 -44.575" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-162-move" visibility="hidden">
+        <g id="frag-2-162-rotate">
+          <g transform="translate(129.558 153.368)">
+            <g id="frag-2-162-scale">
+              <g transform="translate(-129.558 -153.368)">
+                <path d="M139 158C130.716 158 124 152.404 124 145.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-12.849 129.558 153.368;-12.849 129.558 153.368;0 129.558 153.368;0 129.558 153.368;-12.849 129.558 153.368;-12.849 129.558 153.368;-12.849 129.558 153.368" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="61.399 -15.547;61.399 -15.547;0 0;0 0;61.399 -15.547;61.399 -15.547;61.399 -15.547" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-165-move" visibility="hidden">
+        <g id="frag-2-165-rotate">
+          <g transform="translate(126.508 176.422)">
+            <g id="frag-2-165-scale">
+              <g transform="translate(-126.508 -176.422)">
+                <path d="M142.5 178.969C139.3 179.025 135.907 179 132.5 179C117.864 179 106 172.956 106 165.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-8.265 126.508 176.422;-8.265 126.508 176.422;0 126.508 176.422;0 126.508 176.422;-8.265 126.508 176.422;-8.265 126.508 176.422;-8.265 126.508 176.422" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="12.760 -56.754;12.760 -56.754;0 0;0 0;12.760 -56.754;12.760 -56.754;12.760 -56.754" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-168-move" visibility="hidden">
+        <g id="frag-2-168-rotate">
+          <g transform="translate(277.000 146.363)">
+            <g id="frag-2-168-scale">
+              <g transform="translate(-277.000 -146.363)">
+                <path d="M242 168C242 148.67 257.67 133 277 133C296.33 133 312 148.67 312 168" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-12.599 277.000 146.363;-12.599 277.000 146.363;0 277.000 146.363;0 277.000 146.363;-12.599 277.000 146.363;-12.599 277.000 146.363;-12.599 277.000 146.363" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="49.846 -44.500;49.846 -44.500;0 0;0 0;49.846 -44.500;49.846 -44.500;49.846 -44.500" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-171-move" visibility="hidden">
+        <g id="frag-2-171-rotate">
+          <g transform="translate(277.000 242.637)">
+            <g id="frag-2-171-scale">
+              <g transform="translate(-277.000 -242.637)">
+                <path d="M242 221C242 240.33 257.67 256 277 256C296.33 256 312 240.33 312 221" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-24.270 277.000 242.637;-24.270 277.000 242.637;0 277.000 242.637;0 277.000 242.637;-24.270 277.000 242.637;-24.270 277.000 242.637;-24.270 277.000 242.637" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-27.573 34.356;-27.573 34.356;0 0;0 0;-27.573 34.356;-27.573 34.356;-27.573 34.356" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-174-move" visibility="hidden">
+        <g id="frag-2-174-rotate">
+          <g transform="translate(277.000 247.909)">
+            <g id="frag-2-174-scale">
+              <g transform="translate(-277.000 -247.909)">
+                <path d="M272 251C272 248.239 274.239 246 277 246C279.761 246 282 248.239 282 251" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="9.849 277.000 247.909;9.849 277.000 247.909;0 277.000 247.909;0 277.000 247.909;9.849 277.000 247.909;9.849 277.000 247.909;9.849 277.000 247.909" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-5.723 -10.498;-5.723 -10.498;0 0;0 0;-5.723 -10.498;-5.723 -10.498;-5.723 -10.498" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-177-move" visibility="hidden">
+        <g id="frag-2-177-rotate">
+          <g transform="translate(222.000 193.833)">
+            <g id="frag-2-177-scale">
+              <g transform="translate(-222.000 -193.833)">
+                <path d="M227 172L212 194.5L227 215" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="0.798 222.000 193.833;0.798 222.000 193.833;0 222.000 193.833;0 222.000 193.833;0.798 222.000 193.833;0.798 222.000 193.833;0.798 222.000 193.833" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="36.931 16.411;36.931 16.411;0 0;0 0;36.931 16.411;36.931 16.411;36.931 16.411" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-180-move" visibility="hidden">
+        <g id="frag-2-180-rotate">
+          <g transform="translate(333.000 193.833)">
+            <g id="frag-2-180-scale">
+              <g transform="translate(-333.000 -193.833)">
+                <path d="M328 172L343 194.5L328 215" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-20.208 333.000 193.833;-20.208 333.000 193.833;0 333.000 193.833;0 333.000 193.833;-20.208 333.000 193.833;-20.208 333.000 193.833;-20.208 333.000 193.833" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-72.508 7.751;-72.508 7.751;0 0;0 0;-72.508 7.751;-72.508 7.751;-72.508 7.751" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-183-move" visibility="hidden">
+        <g id="frag-2-183-rotate">
+          <g transform="translate(275.750 193.250)">
+            <g id="frag-2-183-scale">
+              <g transform="translate(-275.750 -193.250)">
+                <path d="M256 215L295.5 171.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="4.104 275.750 193.250;4.104 275.750 193.250;0 275.750 193.250;0 275.750 193.250;4.104 275.750 193.250;4.104 275.750 193.250;4.104 275.750 193.250" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-25.062 -8.335;-25.062 -8.335;0 0;0 0;-25.062 -8.335;-25.062 -8.335;-25.062 -8.335" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-186-move" visibility="hidden">
+        <g id="frag-2-186-rotate">
+          <g transform="translate(249.046 185.000)">
+            <g id="frag-2-186-scale">
+              <g transform="translate(-249.046 -185.000)">
+                <path d="M252 185C252 186.657 250.657 188 249 188C247.343 188 246 186.657 246 185C246 183.343 247.343 182 249 182C250.657 182 252 183.343 252 185Z" stroke-width="6" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-6.704 249.046 185.000;-6.704 249.046 185.000;0 249.046 185.000;0 249.046 185.000;-6.704 249.046 185.000;-6.704 249.046 185.000;-6.704 249.046 185.000" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-27.757 -44.874;-27.757 -44.874;0 0;0 0;-27.757 -44.874;-27.757 -44.874;-27.757 -44.874" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-2-189-move" visibility="hidden">
+        <g id="frag-2-189-rotate">
+          <g transform="translate(306.046 185.000)">
+            <g id="frag-2-189-scale">
+              <g transform="translate(-306.046 -185.000)">
+                <path d="M309 185C309 186.657 307.657 188 306 188C304.343 188 303 186.657 303 185C303 183.343 304.343 182 306 182C307.657 182 309 183.343 309 185Z" stroke-width="6" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="19.056 306.046 185.000;19.056 306.046 185.000;0 306.046 185.000;0 306.046 185.000;19.056 306.046 185.000;19.056 306.046 185.000;19.056 306.046 185.000" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-60.680 5.121;-60.680 5.121;0 0;0 0;-60.680 5.121;-60.680 5.121;-60.680 5.121" keyTimes="0;0.45;0.515;0.64375;0.69375;0.74375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.450000;0.743750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+    </svg>
+  </g>
+  <g id="launch">
+    <svg x="0" y="26" width="450" height="396" viewBox="0 0 450 396" preserveAspectRatio="xMidYMid meet" fill="none">
+      <g id="frag-3-192-move" visibility="hidden">
+        <g id="frag-3-192-rotate">
+          <g transform="translate(159.344 342.338)">
+            <g id="frag-3-192-scale">
+              <g transform="translate(-159.344 -342.338)">
+                <path d="M-10 391H148.5C169.211 391 186 374.211 186 353.5C186 332.789 169.211 316 148.5 316C145.932 316 143.423 316.258 141 316.75" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-14.476 159.344 342.338;-14.476 159.344 342.338;0 159.344 342.338;0 159.344 342.338;-14.476 159.344 342.338;-14.476 159.344 342.338;-14.476 159.344 342.338" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-26.494 -12.126;-26.494 -12.126;0 0;0 0;-26.494 -12.126;-26.494 -12.126;-26.494 -12.126" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-195-move" visibility="hidden">
+        <g id="frag-3-195-rotate">
+          <g transform="translate(134.060 291.697)">
+            <g id="frag-3-195-scale">
+              <g transform="translate(-134.060 -291.697)">
+                <path d="M63.5376 263H106.5C127.211 263 144 279.789 144 300.5C144 306.223 142.718 311.647 140.425 316.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-2.525 134.060 291.697;-2.525 134.060 291.697;0 134.060 291.697;0 134.060 291.697;-2.525 134.060 291.697;-2.525 134.060 291.697;-2.525 134.060 291.697" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="14.068 -39.557;14.068 -39.557;0 0;0 0;14.068 -39.557;14.068 -39.557;14.068 -39.557" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-198-move" visibility="hidden">
+        <g id="frag-3-198-rotate">
+          <g transform="translate(59.146 235.505)">
+            <g id="frag-3-198-scale">
+              <g transform="translate(-59.146 -235.505)">
+                <path d="M1 206H31.5C52.2107 206 69 222.789 69 243.5C69 250.434 67.1181 256.928 63.8373 262.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="20.564 59.146 235.505;20.564 59.146 235.505;0 59.146 235.505;0 59.146 235.505;20.564 59.146 235.505;20.564 59.146 235.505;20.564 59.146 235.505" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="28.298 51.966;28.298 51.966;0 0;0 0;28.298 51.966;28.298 51.966;28.298 51.966" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-201-move" visibility="hidden">
+        <g id="frag-3-201-rotate">
+          <g transform="translate(249.502 340.051)">
+            <g id="frag-3-201-scale">
+              <g transform="translate(-249.502 -340.051)">
+                <path d="M231.5 336C235.157 339.995 239.157 342 245 342H449.5" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="3.763 249.502 340.051;3.763 249.502 340.051;0 249.502 340.051;0 249.502 340.051;3.763 249.502 340.051;3.763 249.502 340.051;3.763 249.502 340.051" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-24.612 26.944;-24.612 26.944;0 0;0 0;-24.612 26.944;-24.612 26.944;-24.612 26.944" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-204-move" visibility="hidden">
+        <g id="frag-3-204-rotate">
+          <g transform="translate(272.500 302.000)">
+            <g id="frag-3-204-scale">
+              <g transform="translate(-272.500 -302.000)">
+                <path d="M250 302H295" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="14.182 272.500 302.000;14.182 272.500 302.000;0 272.500 302.000;0 272.500 302.000;14.182 272.500 302.000;14.182 272.500 302.000;14.182 272.500 302.000" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-32.764 -14.060;-32.764 -14.060;0 0;0 0;-32.764 -14.060;-32.764 -14.060;-32.764 -14.060" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-207-move" visibility="hidden">
+        <g id="frag-3-207-rotate">
+          <g transform="translate(342.554 254.563)">
+            <g id="frag-3-207-scale">
+              <g transform="translate(-342.554 -254.563)">
+                <path d="M295 302C295 268.863 321.863 242 355 242C364.513 242 373.508 244.214 381.5 248.154" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="26.125 342.554 254.563;26.125 342.554 254.563;0 342.554 254.563;0 342.554 254.563;26.125 342.554 254.563;26.125 342.554 254.563;26.125 342.554 254.563" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="25.253 -27.321;25.253 -27.321;0 0;0 0;25.253 -27.321;25.253 -27.321;25.253 -27.321" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-210-move" visibility="hidden">
+        <g id="frag-3-210-rotate">
+          <g transform="translate(424.560 200.543)">
+            <g id="frag-3-210-scale">
+              <g transform="translate(-424.560 -200.543)">
+                <path d="M449.782 189.5C447.234 189.17 444.637 189 442 189C408.863 189 382 215.863 382 249" stroke-width="10" stroke-linecap="round" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="10.211 424.560 200.543;10.211 424.560 200.543;0 424.560 200.543;0 424.560 200.543;10.211 424.560 200.543;10.211 424.560 200.543;10.211 424.560 200.543" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="50.903 33.985;50.903 33.985;0 0;0 0;50.903 33.985;50.903 33.985;50.903 33.985" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-213-move" visibility="hidden">
+        <g id="frag-3-213-rotate">
+          <g transform="translate(226.808 109.000)">
+            <g id="frag-3-213-scale">
+              <g transform="translate(-226.808 -109.000)">
+                <path d="M246.5 109C246.5 120.046 237.546 129 226.5 129C215.454 129 206.5 120.046 206.5 109C206.5 97.9543 215.454 89 226.5 89C237.546 89 246.5 97.9543 246.5 109Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="12.639 226.808 109.000;12.639 226.808 109.000;0 226.808 109.000;0 226.808 109.000;12.639 226.808 109.000;12.639 226.808 109.000;12.639 226.808 109.000" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-79.702 -55.972;-79.702 -55.972;0 0;0 0;-79.702 -55.972;-79.702 -55.972;-79.702 -55.972" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-216-move" visibility="hidden">
+        <g id="frag-3-216-rotate">
+          <g transform="translate(224.977 169.177)">
+            <g id="frag-3-216-scale">
+              <g transform="translate(-224.977 -169.177)">
+                <path d="M168.5 151.109V140.276C168.5 94.9724 184.183 51.0656 212.886 16.0144C219.668 7.73303 232.332 7.73303 239.114 16.0144C267.817 51.0656 283.5 94.9724 283.5 140.276V212C283.5 223.046 274.546 232 263.5 232H180C173.649 232 168.5 226.851 168.5 220.5M168.5 151.109C153.463 154.792 120.451 175.131 105.344 227.105C104.838 228.848 106.758 230.269 108.313 229.332C130.758 215.807 168.5 198.39 168.5 220.5M168.5 151.109V220.5M283.5 148.882C298.837 152.566 332.507 172.904 347.916 224.879C348.432 226.622 346.473 228.042 344.888 227.105C321.995 213.58 283.5 196.163 283.5 218.273" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="-26.441 224.977 169.177;-26.441 224.977 169.177;0 224.977 169.177;0 224.977 169.177;-26.441 224.977 169.177;-26.441 224.977 169.177;-26.441 224.977 169.177" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="8.997 54.244;8.997 54.244;0 0;0 0;8.997 54.244;8.997 54.244;8.997 54.244" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <g id="frag-3-219-move" visibility="hidden">
+        <g id="frag-3-219-rotate">
+          <g transform="translate(225.978 187.942)">
+            <g id="frag-3-219-scale">
+              <g transform="translate(-225.978 -187.942)">
+                <path d="M224.5 150H227.5C231.918 150 235.5 153.582 235.5 158V219C235.5 223.418 231.918 227 227.5 227H224.5C220.082 227 216.5 223.418 216.5 219V158C216.5 153.582 220.082 150 224.5 150Z" stroke-width="10" stroke="#FF5F33" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="5.340 225.978 187.942;5.340 225.978 187.942;0 225.978 187.942;0 225.978 187.942;5.340 225.978 187.942;5.340 225.978 187.942;5.340 225.978 187.942" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="-4.140 -36.584;-4.140 -36.584;0 0;0 0;-4.140 -36.584;-4.140 -36.584;-4.140 -36.584" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+      <mask id="stroke0_64_227" fill="white">
+        <path d="M226.801 354L254.679 301.53C263.59 284.758 259.124 264.006 244.103 252.385C233.915 244.503 219.688 244.503 209.5 252.385C194.479 264.006 190.013 284.758 198.924 301.53L226.801 354Z" />
+      </mask>
+      <g id="frag-3-222-move" visibility="hidden">
+        <g id="frag-3-222-rotate">
+          <g transform="translate(226.801 270.715)">
+            <g id="frag-3-222-scale">
+              <g transform="translate(-226.801 -270.715)">
+                <path d="M226.801 354L254.679 301.53C263.59 284.758 259.124 264.006 244.103 252.385C233.915 244.503 219.688 244.503 209.5 252.385C194.479 264.006 190.013 284.758 198.924 301.53L226.801 354Z" stroke-width="20" stroke="#FF5F33" mask="url(#stroke0_64_227)" />
+              </g>
+              <animateTransform values="0.02;0.12;1;1;0.82;0.02;0.02" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="scale" />
+            </g>
+          </g>
+          <animateTransform values="6.823 226.801 270.715;6.823 226.801 270.715;0 226.801 270.715;0 226.801 270.715;6.823 226.801 270.715;6.823 226.801 270.715;6.823 226.801 270.715" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="rotate" />
+        </g>
+        <animateTransform values="36.051 -31.585;36.051 -31.585;0 0;0 0;36.051 -31.585;36.051 -31.585;36.051 -31.585" keyTimes="0;0.7;0.765;0.89375;0.94375;0.99375;1" dur="8000ms" begin="0ms" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" additive="replace" attributeName="transform" type="translate" />
+        <animate attributeName="visibility" values="hidden;visible;hidden;hidden" keyTimes="0;0.700000;0.993750;1" dur="8s" repeatCount="indefinite" calcMode="discrete" />
+      </g>
+    </svg>
+  </g>
+</svg>

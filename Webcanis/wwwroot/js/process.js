@@ -1,4 +1,4 @@
-import { getProcessState } from './process-motion.mjs';
+import { getProcessState, getProcessFrame, getProcessMorphTime, getProcessPlayback } from './process-motion.mjs';
 
 const process = document.querySelector('.process-section');
 if (process) {
@@ -6,12 +6,18 @@ if (process) {
     const details = [...process.querySelectorAll('.process-detail')];
     const tablist = process.querySelector('.process-tabs');
     const canvas = process.querySelector('.process-canvas');
+    const illustration = process.querySelector('.process-illustration');
+    const artwork = illustration.querySelector('object');
+    let svgTimelines = [];
     const desktop = matchMedia('(min-width: 1100px) and (min-height: 680px)');
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
     let active = 0;
     let pinned = false;
     let pending = false;
     let range = 1;
+    let visualProgress = 0;
+    let targetStage = 0;
+    let playbackFrame = 0;
 
     process.classList.add('process-interactive');
     tablist.setAttribute('role', 'tablist');
@@ -21,9 +27,11 @@ if (process) {
     });
 
     function paint(progress) {
-        const state = getProcessState(progress);
+        visualProgress = progress;
+        const state = getProcessFrame(progress);
         active = state.active;
         process.dataset.stage = String(active);
+        svgTimelines.forEach(timeline => timeline.setCurrentTime(getProcessMorphTime(progress)));
         tabs.forEach((tab, index) => {
             const pose = state.stages[index];
             tab.setAttribute('aria-selected', String(index === active));
@@ -41,10 +49,30 @@ if (process) {
         });
     }
 
+    function showStage(index, immediate = false) {
+        if (index === targetStage && (!immediate || (!playbackFrame && visualProgress === index))) return;
+        targetStage = index;
+        cancelAnimationFrame(playbackFrame);
+        playbackFrame = 0;
+        if (immediate || reducedMotion.matches) {
+            paint(index);
+            return;
+        }
+        const from = visualProgress;
+        const start = performance.now();
+        function tick(now) {
+            const frame = getProcessPlayback(from, index, now - start);
+            paint(frame.progress);
+            playbackFrame = frame.done ? 0 : requestAnimationFrame(tick);
+        }
+        playbackFrame = requestAnimationFrame(tick);
+    }
+
     function render() {
         pending = false;
-        const progress = pinned ? -process.getBoundingClientRect().top / range * 3 : active;
-        paint(progress);
+        const rect = process.getBoundingClientRect();
+        const progress = pinned ? -rect.top / range * 3 : targetStage;
+        showStage(getProcessState(progress).active, rect.bottom < 0 || rect.top > innerHeight);
     }
 
     function schedule() {
@@ -54,10 +82,10 @@ if (process) {
     function select(index) {
         if (pinned) {
             const start = scrollY + process.getBoundingClientRect().top;
-            window.scrollTo({ top: start + range * index / 3, behavior: 'smooth' });
-        } else {
-            paint(index);
+            // The sticky scene stays in place; its own playback provides the transition.
+            window.scrollTo({ top: start + range * index / 3, behavior: 'instant' });
         }
+        showStage(index);
     }
 
     tabs.forEach((tab, index) => {
@@ -80,8 +108,21 @@ if (process) {
         process.classList.toggle('process-pinned', pinned);
         range = Math.max(1, process.offsetHeight - innerHeight);
         canvas.style.setProperty('--process-scale', canvas.clientWidth / 1728);
+        if (reducedMotion.matches) showStage(targetStage, true);
         render();
     }
+    artwork.addEventListener('load', () => {
+        const root = artwork.contentDocument?.documentElement;
+        if (typeof root?.pauseAnimations !== 'function') return;
+        // Nested SVG viewports have independent SMIL clocks in Chromium.
+        svgTimelines = [root, ...root.querySelectorAll('svg')];
+        svgTimelines.forEach(timeline => {
+            timeline.pauseAnimations();
+            timeline.setCurrentTime(getProcessMorphTime(visualProgress));
+        });
+        illustration.classList.add('is-ready');
+    });
+    artwork.data = illustration.dataset.animationUrl;
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', configure);
     desktop.addEventListener('change', configure);
@@ -91,5 +132,7 @@ if (process) {
             window.scrollTo({ top: scrollY + process.getBoundingClientRect().top, behavior: 'instant' });
         }
     });
+    window.addEventListener('pagehide', () => showStage(targetStage, true));
+    paint(0);
     configure();
 }

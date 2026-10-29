@@ -1,4 +1,4 @@
-import { smoothstep } from './laptop-motion.mjs';
+import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=continuous-playback';
 import './process.js';
 import { initializeSolutions } from './solutions.js';
 
@@ -22,14 +22,13 @@ if (journey) {
     let enabled = false;
     let scrollRange = 1;
     let framePending = false;
+    let visualTime = 0;
+    let targetTime = 0;
+    let playbackFrame = 0;
 
-    function render() {
-        framePending = false;
-        if (!enabled) {
-            laptop?.update({ enhanced: false, time: 0 });
-            return;
-        }
-        const time = Math.max(0, Math.min(3, -journey.getBoundingClientRect().top / scrollRange * 3));
+    function paint(time) {
+        visualTime = time;
+        journey.dataset.sceneTime = time.toFixed(3);
         const visibility = [
             1 - smoothstep(.35, .95, time),
             smoothstep(.9, 1.2, time) * (1 - smoothstep(1.55, 1.95, time)),
@@ -45,6 +44,40 @@ if (journey) {
             panel.classList.toggle('is-active', !panel.inert);
         });
         laptop?.update({ enhanced: true, time });
+    }
+
+    function render() {
+        framePending = false;
+        if (!enabled) {
+            cancelAnimationFrame(playbackFrame);
+            playbackFrame = 0;
+            visualTime = targetTime = 0;
+            laptop?.update({ enhanced: false, time: 0 });
+            return;
+        }
+        const rect = journey.getBoundingClientRect();
+        const next = getLaptopSceneTime(-rect.top / scrollRange * 3);
+        const offscreen = rect.bottom < 0 || rect.top > innerHeight;
+        if (next === targetTime && (!offscreen || (!playbackFrame && visualTime === next))) {
+            paint(visualTime);
+            return;
+        }
+        targetTime = next;
+        cancelAnimationFrame(playbackFrame);
+        playbackFrame = 0;
+        if (offscreen) {
+            paint(next);
+            return;
+        }
+        const from = visualTime;
+        const start = performance.now();
+        // Once triggered, finish the pose and text transition without further scroll events.
+        function tick(now) {
+            const frame = getLaptopPlayback(from, next, now - start);
+            paint(frame.time);
+            playbackFrame = frame.done ? 0 : requestAnimationFrame(tick);
+        }
+        playbackFrame = requestAnimationFrame(tick);
     }
 
     function scheduleRender() {
@@ -114,6 +147,11 @@ if (journey) {
     });
     desktop.addEventListener('change', configure);
     reducedMotion.addEventListener('change', configure);
+    window.addEventListener('pagehide', () => {
+        cancelAnimationFrame(playbackFrame);
+        playbackFrame = 0;
+        if (enabled) paint(targetTime);
+    });
     configure();
     requestAnimationFrame(alignHash);
     import('./laptop-model.js')
