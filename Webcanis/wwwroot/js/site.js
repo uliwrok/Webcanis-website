@@ -3,6 +3,33 @@ import './process.js';
 import { initializeSolutions } from './solutions.js';
 
 const navigation = document.getElementById('main-navigation');
+const header = navigation?.closest('.site-header');
+const about = document.getElementById('nosotros');
+const brand = header?.querySelector('.navbar-brand');
+const home = document.querySelector('.home-panel');
+
+if (header && about && brand) {
+    let themeFrame = 0;
+    function updateHeaderTheme() {
+        themeFrame = 0;
+        const logo = brand.getBoundingClientRect();
+        const section = about.getBoundingClientRect();
+        const midpoint = logo.top + logo.height / 2;
+        header.classList.toggle('is-over-dark', section.top <= midpoint && midpoint < section.bottom);
+        if (home && !home.closest('.story-ready')) {
+            const bounds = home.getBoundingClientRect();
+            header.classList.toggle('is-over-home', bounds.top <= midpoint && midpoint < bounds.bottom);
+        }
+    }
+    function scheduleHeaderTheme() {
+        if (!themeFrame) themeFrame = requestAnimationFrame(updateHeaderTheme);
+    }
+    window.addEventListener('scroll', scheduleHeaderTheme, { passive: true });
+    window.addEventListener('resize', scheduleHeaderTheme);
+    window.addEventListener('pageshow', scheduleHeaderTheme);
+    scheduleHeaderTheme();
+}
+
 navigation?.addEventListener('click', (event) => {
     if (event.target.closest('a') && window.matchMedia('(max-width: 991.98px)').matches) {
         bootstrap.Collapse.getOrCreateInstance(navigation, { toggle: false }).hide();
@@ -27,6 +54,7 @@ if (journey) {
     let playbackFrame = 0;
 
     function paint(time) {
+        header?.classList.toggle('is-over-home', time < 1.2);
         visualTime = time;
         journey.dataset.sceneTime = time.toFixed(3);
         const visibility = [

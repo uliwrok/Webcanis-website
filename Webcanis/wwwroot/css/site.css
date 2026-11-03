@@ -110,13 +110,31 @@ a, button { touch-action: manipulation; transition: color 160ms ease, background
 .reference-screen { position: absolute; top: 50%; left: 50%; width: 95.56%; height: 93.587%; object-fit: cover; transform: translate(-50%, -50%) rotate(3.33deg); }
 .hero-mobile-art { margin: 2.5rem 0 1.5rem; max-width: 36rem; }
 .page-section { padding-block: var(--space-section); }
-.about-section { background: var(--dark-surface); color: var(--dark-text); }
-.about-section .eyebrow, .about-section h2 span { color: var(--brand-orange); }
-.about-copy p { color: var(--dark-muted); }
-.about-copy .about-lead { color: var(--dark-text); font-size: 1.375rem; line-height: 1.6; }
-.about-copy .text-link { color: var(--dark-text); }
+.about-section {
+    color: #fff;
+    background-color: #3a4f41;
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Crect x='10' y='10' width='4' height='4' fill='white' opacity='.04'/%3E%3C/svg%3E"),
+        linear-gradient(180deg, #3a4f41 40%, #465649);
+    background-size: 24px 24px, auto;
+}
+.about-layout { display: grid; gap: 1.5rem; margin-inline: max(24px, 5.38vw); }
+.about-section h2 { margin: 0; letter-spacing: 0; }
+.about-section h2 span { color: var(--brand-orange); }
+.about-copy p { margin: 0 0 1.25rem; color: #c3c9c4; line-height: 1.62; }
+.about-copy .about-lead { color: #fff; font-size: 1.375rem; line-height: 1.42; }
+.about-copy .text-link { color: #fff; text-underline-offset: .15em; }
 .about-copy .text-link:hover { color: var(--brand-orange); }
 .about-section a:focus-visible { outline-color: var(--brand-orange); }
+@media (min-width: 992px) {
+    .about-section { min-height: 33.04vw; padding-block: 9.086vw 6vw; }
+    .about-layout { grid-template-columns: minmax(0, 749fr) minmax(0, 726fr); gap: 3.993vw; }
+    .about-section h2 { font-size: 3.65vw; line-height: .86; white-space: nowrap; }
+    .about-copy { font-size: 1.1574vw; }
+    .about-copy p { margin-bottom: 1.273vw; }
+    .about-copy .about-lead { font-size: 1.505vw; }
+    .about-copy .text-link { font-size: inherit; }
+}
 .contact-note { max-width: 32rem; margin-top: 2rem; padding-left: 1rem; border-left: 2px solid var(--accent-ink); font-size: .875rem; }
 .form-label { font-size: .9375rem; }
 .form-control { min-height: 48px; border: 1px solid var(--line-color); border-radius: 4px; font-size: 1rem; }

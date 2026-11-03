@@ -3,7 +3,14 @@
 
 /* The 1728 × 1077 content canvas excludes Figma's sample browser toolbar. */
 html { scroll-padding-top: 76px; }
-.site-header { position: fixed; inset: 0 0 auto; z-index: 20; padding: .58vw .87vw; border: 0; background: var(--page-background); }
+.site-header { position: fixed; inset: 0 0 auto; z-index: 20; padding: .58vw .87vw; border: 0; background: transparent; }
+.site-header.is-over-home { background: var(--page-background); }
+.site-header.is-over-dark .nav-link,
+.site-header.is-over-dark .nav-link:hover,
+.site-header.is-over-dark .nav-link:focus-visible { color: #fff; }
+.site-header.is-over-dark .navbar-toggler-icon { filter: invert(1); }
+.site-header.is-over-dark a:focus-visible,
+.site-header.is-over-dark button:focus-visible { outline-color: #fff; }
 .brand-mark { width: clamp(30px, 2.49vw, 43px); height: auto; }
 .brand-name { color: var(--brand-orange); font-size: clamp(24px, 2.083vw, 36px); font-weight: 400; letter-spacing: -.08em; line-height: 1.05; }
 .navbar-nav { gap: 1.6vw; }
