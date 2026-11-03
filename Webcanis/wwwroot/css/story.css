@@ -11,8 +11,10 @@ html { scroll-padding-top: 76px; }
 .site-header.is-over-dark .navbar-toggler-icon { filter: invert(1); }
 .site-header.is-over-dark a:focus-visible,
 .site-header.is-over-dark button:focus-visible { outline-color: #fff; }
-.brand-mark { width: clamp(30px, 2.49vw, 43px); height: auto; }
-.brand-name { color: var(--brand-orange); font-size: clamp(24px, 2.083vw, 36px); font-weight: 400; letter-spacing: -.08em; line-height: 1.05; }
+@font-face { font-family: Dongle; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/dongle-regular.ttf') format('truetype'); }
+.navbar-brand { gap: clamp(5px, .405vw, 7px); }
+.brand-mark { width: clamp(32px, 3.067vw, 53px); height: auto; }
+.brand-name { color: var(--brand-orange); font: 400 clamp(38px, 3.704vw, 64px)/1 Dongle, sans-serif; letter-spacing: -.01em; }
 .navbar-nav { gap: 1.6vw; }
 .navbar .nav-link { padding: 0; font-size: clamp(14px, 1.157vw, 20px); letter-spacing: -.08em; line-height: 1.033; }
 .navbar .nav-contact { min-height: 32px; padding: .2rem .6rem; gap: .25rem; border: 2px solid var(--brand-orange); }
@@ -29,8 +31,7 @@ html { scroll-padding-top: 76px; }
 .story-eyebrow { margin: 0 0 1.1cqw; color: var(--brand-orange); font: 400 .9259cqw/.795 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
 .hero-copy { position: absolute; top: 12.79cqw; left: 1.215cqw; width: 49.1cqw; }
 .hero-copy h1 { text-transform: uppercase; }
-.hero-description { width: 43.87cqw; max-width: none; margin: 1.45cqw 0 0 .347cqw; font: 400 1.389cqw/1.04 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
-.hero-description strong { font-weight: 600; }
+.hero-description { width: 41.55cqw; max-width: none; margin: 1.45cqw 0 0 .347cqw; font: 400 1.389cqw/1.033 Huninn, sans-serif; letter-spacing: 0; color: #696564; }
 .hero-actions { position: absolute; top: 21.93cqw; left: 0; gap: 1.62cqw; }
 .hero-actions .btn { width: 18.808cqw; min-height: 3.588cqw; padding: .6cqw 1cqw; gap: .3cqw; border: 0; font-size: 1.389cqw; letter-spacing: -.08em; color: var(--page-background); background: var(--brand-orange); box-shadow: 0 4px 5px #0003; }
 .hero-actions .btn:hover { background: #db421b; }
@@ -46,38 +47,37 @@ html { scroll-padding-top: 76px; }
 .hero-callout-marker .callout-line-slot img { transform: translate(-50%, -50%) rotate(-90deg); }
 .hero-callout-marker .callout-dot { left: 0; top: 0; }
 .solutions-heading { position: absolute; top: 7.234cqw; left: 2.025cqw; width: 45.95cqw; }
-.solutions-copy { position: absolute; top: 18.345cqw; left: 2.2cqw; width: 32.234cqw; }
-.solutions-intro { min-height: 5.15cqw; margin: 0 0 1.91cqw; font: 1.389cqw/.79475 'IBM Plex Mono', monospace; letter-spacing: -.08em; text-align: justify; }
-.service-list { margin: 0; gap: .694cqw; }
-.service-item { position: relative; min-height: 8.275cqw; padding: .8cqw 2.5cqw .75cqw 2.7cqw; border: 2px solid #b6b6b6; border-radius: 10px; gap: 0; }
-.service-item.is-featured { background: #b6b6b6; }
-.service-item:hover { border-color: var(--brand-orange); }
+.solutions-copy { position: absolute; top: 15.856cqw; left: 2.14cqw; width: 32.234cqw; }
+.solutions-intro { min-height: 5.15cqw; margin: 0 0 1.331cqw; color: #696564; font: 400 1.389cqw/1 Huninn, sans-serif; letter-spacing: .01em; text-align: justify; }
+.service-list { margin: 0; gap: 1.91cqw; }
+.service-item { position: relative; min-height: 8.275cqw; padding: .926cqw 4.74cqw .75cqw 1.27cqw; border-radius: 10px; background: #ededed; box-shadow: 0 5px 0 #b6b6b6, 0 8px 7px #0004; }
+.service-item.is-featured { background: #b6b6b6; box-shadow: none; }
+.service-item:hover { outline: 1px solid var(--brand-orange); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .service-item:not(.is-featured):hover { animation: service-wobble .6s ease-in-out; }
+}
+@keyframes service-wobble {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-1.5deg); }
+    75% { transform: rotate(1.5deg); }
+}
 .service-select { padding: 0; border: 0; background: none; color: inherit; font: inherit; letter-spacing: inherit; text-align: left; }
 .service-select:focus-visible { outline: none; box-shadow: none; }
 .service-item:has(.service-select:focus-visible) { outline: 3px solid var(--focus-color); outline-offset: 5px; }
 .service-item h3 { margin: 0 0 .8cqw; white-space: nowrap; color: var(--brand-orange); font: 500 1.5625cqw/1.033 'Inclusive Sans', sans-serif; letter-spacing: -.08em; }
-.service-item.is-featured h3, .service-item.is-featured .item-number { color: white; }
-.service-item p { margin: 0; color: var(--heading-color); font: 1.1574cqw/.95 'IBM Plex Mono', monospace; letter-spacing: -.08em; text-align: justify; }
-.item-number { position: absolute; left: .35cqw; top: .95cqw; padding: 0; color: var(--brand-orange); font: .868cqw/.795 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
-.solutions-contact { position: absolute; left: 2.2cqw; top: 56.481cqw; }
-.solutions-callout p { position: absolute; left: 81.02cqw; top: 11.81cqw; font: .9259cqw/.795 'IBM Plex Mono', monospace; letter-spacing: -.08em; color: var(--heading-color); }
-.solutions-callout-marker { left: 80.38cqw; top: 12.9cqw; }
-.solutions-callout-marker .callout-line-slot { left: 0; top: 0; width: 47.942px; height: 49.906px; }
-.solutions-callout-marker .callout-line-slot img { transform: translate(-50%, -50%) rotate(132.83deg); }
-.solutions-callout-marker .callout-dot { left: 10.24px; top: 49.67px; }
+.service-item.is-featured h3 { color: white; }
+.service-item p { margin: 0; color: var(--heading-color); font: 400 1.1574cqw/1 Huninn, sans-serif; letter-spacing: -.02em; text-align: justify; }
+.solutions-contact { position: absolute; left: 2.2cqw; top: 58.39cqw; }
 .projects-heading { position: absolute; top: 10.3cqw; left: 27.025cqw; width: 45.95cqw; }
 .projects-heading h2 { text-align: center; }
-.projects-heading p { width: 43.1cqw; margin: 2.18cqw auto 0; font: 1.389cqw/.95 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
-.project-grid { position: absolute; left: 17.65cqw; top: 31.25cqw; width: 64.6cqw; margin: 0; --bs-gutter-x: .868cqw; --bs-gutter-y: 0; }
+.projects-heading p { width: 39.87cqw; margin: 2.65cqw auto 0; color: #696564; font: 400 1.389cqw/1 Huninn, sans-serif; text-align: justify; }
+.project-grid { position: absolute; left: 17.68cqw; top: 31.25cqw; width: 64.58cqw; margin: 0; --bs-gutter-x: .868cqw; --bs-gutter-y: 0; }
 .project-grid > div { min-width: 0; }
-.project-example { min-height: 20.43cqw; margin: 0; padding: .5cqw 1.7cqw 1.5cqw; background: #efefef; border: 1px solid #b5b5b5; border-radius: 0; box-shadow: 0 4px 4px #0004; }
-.project-meta { margin: 0 -1.2cqw; gap: .4cqw; }
-.project-label, .project-type { padding: 0; font: .7523cqw/.9 'IBM Plex Mono', monospace; letter-spacing: -.08em; white-space: nowrap; }
-.project-label { padding: .1cqw .3cqw; border-color: var(--brand-orange); color: var(--brand-orange); }
-.project-example h3 { min-height: 2.8cqw; margin: 1.4cqw -.8cqw .5cqw; text-align: center; font: 500 1.389cqw/.95 Gabarito, sans-serif; letter-spacing: 0; }
+.project-example { min-height: 20.43cqw; margin: 0; padding: 1.765cqw 1.794cqw 1.5cqw; background: #ededed; border-radius: 1.447cqw; box-shadow: 0 4px 4px #0004; }
+.project-example h3 { min-height: 2.64cqw; margin: 0 -.8cqw .59cqw; text-align: center; font: 500 1.389cqw/.95 Gabarito, sans-serif; letter-spacing: 0; }
 .project-brief { margin: 0; }
-.project-brief dt, .project-brief dd { margin: 0; color: var(--body-color); font: .9259cqw/.95 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
-.project-brief dt { font-weight: 600; }
+.project-brief dt, .project-brief dd { margin: 0; color: var(--body-color); font: .9259cqw/1.125 'IBM Plex Mono', monospace; letter-spacing: -.08em; }
+.project-brief dt { color: var(--brand-orange); font-weight: 600; }
 .project-brief dt:not(:first-child) { margin-top: 1.1cqw; }
 /* The same transparent WebGL canvas is reused across all three compositions. */
 .laptop-canvas { display: block; width: 100%; height: 100%; pointer-events: none; }
@@ -105,27 +105,24 @@ html { scroll-padding-top: 76px; }
     .hero-copy h1 { font-size: clamp(30px, 4.5vw, 60px); }
     .story-eyebrow { margin-bottom: 20px; font-size: 12px; line-height: 1.4; }
     .hero-description, .solutions-intro, .projects-heading p { width: auto; margin: 24px 0; font-size: 16px; line-height: 1.5; letter-spacing: -.04em; text-align: left; }
+    .hero-description { letter-spacing: 0; }
     .hero-actions { position: static; margin-top: 28px; gap: 20px; }
     .hero-actions .btn { width: auto; min-height: 48px; padding: 12px 24px; font-size: 16px; }
     .story-panel .text-link { min-height: 44px; font-size: 16px; gap: 8px; }
-    .hero-callout, .solutions-callout { display: none; }
+    .hero-callout { display: none; }
     .scene-art { position: relative; height: 65cqw; margin-inline: -24px; }
     .solutions-heading { margin-bottom: 24px; }
     .solutions-intro { min-height: 0; }
     .service-list { gap: 12px; }
-    .service-item { min-height: 0; padding: 20px 20px 20px 52px; }
+    .service-item { min-height: 0; padding: 20px; }
     .service-item h3 { margin-bottom: 12px; white-space: normal; font-size: 22px; }
     .service-item p { font-size: 16px; line-height: 1.5; letter-spacing: -.04em; text-align: left; }
-    .item-number { left: 12px; top: 22px; font-size: 12px; }
     .solutions-contact { margin-top: 24px; }
     .solutions-panel .scene-art { height: 60cqw; }
     .projects-heading h2 { text-align: left; }
     .project-grid { --bs-gutter-x: 16px; --bs-gutter-y: 16px; margin-inline: -8px; }
-    .project-example { min-height: 0; padding: 20px; }
-    .project-meta { margin: 0; gap: 8px; }
-    .project-label, .project-type { font-size: 11px; line-height: 1.3; white-space: normal; }
-    .project-label { padding: 2px 6px; }
-    .project-example h3 { min-height: 0; margin: 24px 0; font-size: 22px; line-height: 1.1; text-align: left; }
+    .project-example { min-height: 0; padding: 20px; border-radius: 16px; }
+    .project-example h3 { min-height: 0; margin: 0 0 18px; font-size: 22px; line-height: 1.1; text-align: left; }
     .project-brief dt, .project-brief dd { font-size: 14px; line-height: 1.45; letter-spacing: -.04em; }
     .project-brief dt:not(:first-child) { margin-top: 18px; }
     .projects-panel .scene-art { height: 18cqw; }

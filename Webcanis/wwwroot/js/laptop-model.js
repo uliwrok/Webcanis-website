@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from '../lib/three/examples/jsm/loaders/GLTFLoader.js';
 import { RoomEnvironment } from '../lib/three/examples/jsm/environments/RoomEnvironment.js';
-import { getLaptopPose, laptopPoses } from './laptop-motion.mjs';
+import { getLaptopPose, laptopPoses, smoothstep } from './laptop-motion.mjs';
 
 let screenSource = null;
 let updateScreen = null;
@@ -164,10 +164,14 @@ export async function createLaptopRenderer(journey) {
         camera.zoom = state.enhanced
             ? (pose.width / 1728 * 2) / (unzoomed.right - unzoomed.left)
             : Math.min(1.74 / (unzoomed.right - unzoomed.left), 1.8 / (unzoomed.top - unzoomed.bottom));
+        const homeFit = state.enhanced ? 1 - smoothstep(.35, 1.2, state.time) : 0;
+        const fittedZoom = Math.min(camera.zoom, 1.96 / (unzoomed.top - unzoomed.bottom));
+        camera.zoom += (fittedZoom - camera.zoom) * homeFit;
         camera.updateProjectionMatrix();
         const framed = projectedBounds();
         const targetX = state.enhanced ? pose.x / 1728 * 2 - 1 : 0;
-        const targetY = state.enhanced ? 1 - pose.y / designHeight * 2 : 0;
+        let targetY = state.enhanced ? 1 - pose.y / designHeight * 2 : 0;
+        targetY += Math.max(0, -.98 + (framed.top - framed.bottom) / 2 - targetY) * homeFit;
         camera.setViewOffset(rect.width, rect.height,
             ((framed.left + framed.right) / 2 - targetX) * rect.width / 2,
             (targetY - (framed.top + framed.bottom) / 2) * rect.height / 2,
