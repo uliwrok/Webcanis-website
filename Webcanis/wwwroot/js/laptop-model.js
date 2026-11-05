@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from '../lib/three/examples/jsm/loaders/GLTFLoader.js';
 import { RoomEnvironment } from '../lib/three/examples/jsm/environments/RoomEnvironment.js';
-import { getLaptopPose, laptopPoses, smoothstep } from './laptop-motion.mjs';
+import { getLaptopPose, getMobileLaptopPose, laptopPoses, smoothstep } from './laptop-motion.mjs?v=mobile-solution-pose';
 
 let screenSource = null;
 let updateScreen = null;
@@ -115,12 +115,13 @@ export async function createLaptopRenderer(journey) {
         }
         return result;
     }
-    let state = { enhanced: false, time: 0 };
+    let state = { enhanced: false, time: 0, mobileTime: null };
     let lastSignature = '';
     let disposed = false;
     let contextLost = false;
     let screenTexture = null;
     let imageRequest = 0;
+    let transferAnimation = null;
 
     function draw() {
         if (disposed || contextLost || document.hidden) return;
@@ -134,15 +135,22 @@ export async function createLaptopRenderer(journey) {
                 };
                 return distance(slot) < distance(closest) ? slot : closest;
             }, slots[0]);
-            pose = laptopPoses[host.dataset.modelPose];
+            pose = state.mobileTime == null
+                ? (host.dataset.modelPose === 'solutions' && matchMedia('(max-width: 575.98px)').matches
+                    ? getMobileLaptopPose(1)
+                    : laptopPoses[host.dataset.modelPose])
+                : getMobileLaptopPose(state.mobileTime);
         }
-        if (canvas.parentElement !== host) {
+        const hostChanged = canvas.parentElement !== host;
+        const previousRect = hostChanged && canvas.parentElement ? canvas.getBoundingClientRect() : null;
+        if (hostChanged) {
+            transferAnimation?.cancel();
             host.append(canvas);
             lastSignature = '';
         }
         const rect = host.getBoundingClientRect();
         if (!rect.width || !rect.height || rect.bottom < 0 || rect.top > window.innerHeight) return;
-        const signature = `${state.enhanced}:${state.enhanced ? state.time : host.dataset.modelPose}:${rect.width}:${rect.height}`;
+        const signature = `${state.enhanced}:${state.enhanced ? state.time : state.mobileTime ?? host.dataset.modelPose}:${rect.width}:${rect.height}`;
         if (signature === lastSignature) return;
         lastSignature = signature;
         renderer.setSize(rect.width, rect.height, false);
@@ -177,6 +185,24 @@ export async function createLaptopRenderer(journey) {
             (targetY - (framed.top + framed.bottom) / 2) * rect.height / 2,
             rect.width, rect.height);
         renderer.render(scene, camera);
+        if (previousRect && !state.enhanced && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const width = canvas.offsetWidth;
+            const height = canvas.offsetHeight;
+            const destination = canvas.getBoundingClientRect();
+            const base = getComputedStyle(canvas).transform;
+            const matrix = base === 'none' ? new DOMMatrix() : new DOMMatrix(base);
+            const baseScaleX = Math.hypot(matrix.a, matrix.b);
+            const baseScaleY = Math.hypot(matrix.c, matrix.d);
+            const scaleX = previousRect.width / width;
+            const scaleY = previousRect.height / height;
+            const translateX = previousRect.left - destination.left + (scaleX - baseScaleX) * width / 2;
+            const translateY = previousRect.top - destination.top;
+            transferAnimation = canvas.animate([
+                { transform: `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})` },
+                { transform: base }
+            ], { duration: 520, easing: 'cubic-bezier(.22, .61, .36, 1)' });
+            transferAnimation.onfinish = () => { transferAnimation = null; };
+        }
     }
 
     async function setScreenImage(source) {
@@ -204,6 +230,7 @@ export async function createLaptopRenderer(journey) {
 
     function dispose() {
         disposed = true;
+        transferAnimation?.cancel();
         imageRequest++;
         const geometries = new Set();
         const materials = new Set();

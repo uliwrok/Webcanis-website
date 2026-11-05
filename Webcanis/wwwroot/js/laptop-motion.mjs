@@ -11,6 +11,8 @@ export const laptopPoses = {
     projects: { x: 864, y: 972, width: 1040, pitch: .015, yaw: 0, roll: 0, lid: .035 }
 };
 
+const mobileSolutionsPose = { ...laptopPoses.solutions, pitch: .3 };
+
 function blend(from, to, progress) {
     return Object.fromEntries(Object.keys(from).map(key => [key, from[key] + (to[key] - from[key]) * progress]));
 }
@@ -18,6 +20,13 @@ function blend(from, to, progress) {
 export function getLaptopPose(time) {
     const front = blend(laptopPoses.home, laptopPoses.solutions, smoothstep(.35, 1.2, time));
     return blend(front, laptopPoses.projects, smoothstep(1.55, 2.2, time));
+}
+
+export function getMobileLaptopPose(time) {
+    const progress = Math.max(0, Math.min(2, time));
+    return progress <= 1
+        ? blend(laptopPoses.home, mobileSolutionsPose, smoothstep(0, 1, progress))
+        : blend(mobileSolutionsPose, laptopPoses.projects, smoothstep(1, 2, progress));
 }
 
 export function getLaptopSceneTime(scrollTime) {

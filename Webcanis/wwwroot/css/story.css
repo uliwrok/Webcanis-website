@@ -127,5 +127,47 @@ html { scroll-padding-top: 76px; }
     .project-brief dt:not(:first-child) { margin-top: 18px; }
     .projects-panel .scene-art { height: 18cqw; }
 }
+@media (max-width: 575.98px) {
+    .site-header { position: fixed !important; inset: 0 0 auto; z-index: 30; width: 100%; max-width: 100%; box-sizing: border-box; padding: 0 11px; visibility: visible; opacity: 1; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; background: var(--page-background); }
+    .site-header.is-over-dark { background: #34483c; }
+    .site-header .navbar, .site-header .container-fluid { width: 100%; min-width: 0; }
+    .navbar-brand { flex: 0 1 auto; min-width: 0; max-width: calc(100% - 54px); gap: 4px; }
+    .brand-mark { width: 37px; }
+    .brand-name { font-size: clamp(30px, 9.6vw, 36px); }
+    .navbar-toggler { position: relative; flex: 0 0 44px; width: 44px; height: 44px; min-width: 44px; min-height: 44px; margin: 0; padding: 0; border: 0; }
+    .navbar-toggler::before { position: absolute; inset: 5px; border: 1px solid #afafaf; border-radius: 5px; content: ""; }
+    .navbar-toggler-icon { position: relative; width: 20px; height: 16px; background: linear-gradient(var(--brand-orange), var(--brand-orange)) center / 20px 2px no-repeat; }
+    .navbar-toggler-icon::before, .navbar-toggler-icon::after { position: absolute; left: 0; width: 20px; height: 2px; border-radius: 3px; background: var(--brand-orange); content: ""; }
+    .navbar-toggler-icon::before { top: 2px; }
+    .navbar-toggler-icon::after { bottom: 2px; }
+    .home-panel { display: flex; flex-direction: column; box-sizing: border-box; height: 100vh; height: 100svh; min-height: 0; padding: 11.75svh 30px 0; }
+    .home-panel .story-eyebrow { display: none; }
+    .home-panel h1 { font-size: 28px; line-height: .86; letter-spacing: 0; text-wrap: initial; }
+    .home-panel .hero-description { margin: 2.32svh 0 0; color: #696564; font: 400 23px/1.2 Huninn, sans-serif; letter-spacing: 0; }
+    .home-panel .hero-actions { flex: 0 0 auto; flex-direction: column; gap: 1.16svh; margin: 6.1svh auto 0; }
+    .home-panel .hero-actions .btn { width: 45.6vw; max-width: 171px; min-width: 150px; min-height: clamp(44px, 5.67svh, 46px); padding: 0; font-size: 18px; letter-spacing: -.08em; }
+    .home-panel .hero-actions .text-link { width: 100%; justify-content: center; min-height: 6.4svh; font-size: 18px; }
+    .home-panel .scene-art { flex: 1 1 auto; min-height: 0; height: auto; margin: 0 -30px; }
+    .home-panel .laptop-canvas { transform: scale(1.16); transform-origin: center top; }
+    .solutions-panel { box-sizing: border-box; height: 100vh; height: 100svh; min-height: 0; overflow: clip; padding: 47svh 24px 8px; }
+    .solutions-heading { margin-bottom: 10px; }
+    .solutions-intro { min-height: 0; margin: 8px 0 12px; font-size: 20px; line-height: 1.25; }
+    .solutions-panel .service-list { gap: 16px; }
+    .solutions-panel .service-item { padding: 20px 16px; }
+    .solutions-panel .service-item h3 { margin: 0; font-size: 20px; line-height: 1.2; text-align: center; }
+    .solutions-panel .service-select { width: 100%; text-align: center; }
+    .solutions-panel .service-item p,
+    .solutions-panel .solutions-contact { display: none; }
+    .solutions-panel .scene-art { position: absolute; top: 0; right: 0; left: 0; width: auto; height: 47svh; margin: 0; }
+    .solutions-panel .laptop-canvas { transform: scale(1.58); transform-origin: center top; }
+}
+@media (max-width: 575.98px) and (max-height: 650px) {
+    .solutions-panel { padding-top: 29svh; }
+    .solutions-panel .scene-art { height: 29svh; }
+    .solutions-heading { margin-bottom: 6px; }
+    .solutions-panel .service-list { gap: 6px; }
+    .solutions-panel .service-item { padding: 10px 14px; }
+    .solutions-panel .service-item h3 { font-size: 18px; }
+}
 @media (min-width: 992px) and (max-width: 1099.98px) { .navbar-collapse { padding-top: 0; } }
 @media (prefers-reduced-motion: reduce) { .story-panel { filter: none !important; opacity: 1 !important; } }

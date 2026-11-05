@@ -1,4 +1,4 @@
-import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=continuous-playback';
+import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=mobile-solution-pose';
 import './process.js';
 import { initializeSolutions } from './solutions.js';
 
@@ -80,7 +80,13 @@ if (journey) {
             cancelAnimationFrame(playbackFrame);
             playbackFrame = 0;
             visualTime = targetTime = 0;
-            laptop?.update({ enhanced: false, time: 0 });
+            const journeyTop = journey.getBoundingClientRect().top;
+            const scrollPosition = -journeyTop;
+            const mobileTime = reducedMotion.matches ? null : panels.slice(1).reduce((time, panel) => {
+                const start = panel.getBoundingClientRect().top - journeyTop;
+                return time + smoothstep(start - innerHeight * .75, start + innerHeight * .25, scrollPosition);
+            }, 0);
+            laptop?.update({ enhanced: false, time: 0, mobileTime });
             return;
         }
         const rect = journey.getBoundingClientRect();
@@ -182,7 +188,7 @@ if (journey) {
     });
     configure();
     requestAnimationFrame(alignHash);
-    import('./laptop-model.js')
+        import('./laptop-model.js?v=mobile-solution-pose')
         .then(async module => {
             await initializeSolutions(module.setLaptopScreenImage);
             return module.createLaptopRenderer(journey);
