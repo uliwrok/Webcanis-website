@@ -10,8 +10,9 @@
 .process-illustration.is-ready object { visibility: visible; }
 .process-illustration.is-ready .process-art-fallback { visibility: hidden; }
 .process-tabs { flex-wrap: wrap; gap: 12px 24px; margin: 40px 0 28px; }
+.process-slide { display: flex; flex-direction: column; min-width: 0; }
 .process-tab { padding: 6px 0; border: 0; background: transparent; color: #808080; font: 500 20px/1.2 'IBM Plex Mono', monospace; letter-spacing: -.08em; text-align: left; white-space: nowrap; }
-.process-tab:hover, .process-tab[aria-selected="true"] { color: var(--brand-orange); }
+.process-tab:hover, .process-tab[aria-pressed="true"] { color: var(--brand-orange); }
 .process-detail p { margin: 0 0 24px; color: #696564; font: 400 18px/1.6 Huninn, sans-serif; letter-spacing: -.07em; }
 .process-detail[hidden] { display: none; }
 .process-line { display: none; }
@@ -24,15 +25,33 @@
     .process-heading p { width: 33.39cqw; margin: 1.04cqw 0 0 auto; font-size: 1.389cqw; line-height: .79475; }
     .process-interactive .process-illustration { position: absolute; left: 14.844cqw; top: 12.384cqw; width: 26.042cqw; margin: 0; }
     .process-interactive .process-tabs { position: absolute; inset: 0; margin: 0; display: block !important; }
+    .process-interactive .process-slide { display: contents; }
     .process-interactive .process-tab { position: absolute; left: 0; top: 0; padding: 0; font-size: 2.7778cqw; line-height: 1.23; transform: translate(var(--stage-x), var(--stage-y)); color: var(--stage-color); }
     .process-interactive .process-tab:hover { color: var(--brand-orange); }
-    .process-interactive .process-details { position: absolute; top: 46.644cqw; left: 16.667cqw; width: 20.08cqw; }
-    .process-interactive .process-detail { position: absolute; inset: 0 0 auto; animation: none; }
+    .process-interactive .process-detail { position: absolute; top: 46.644cqw; left: 16.667cqw; width: 20.08cqw; animation: none; }
     .process-detail p { margin: 0; font-size: 1.85185cqw; line-height: 1.033; text-align: justify; }
     .process-interactive .process-line { display: block; position: absolute; left: 16.667cqw; top: 58.912cqw; width: 20.43cqw; height: 6px; overflow: hidden; }
     .process-line img { position: absolute; left: 0; top: 0; max-width: none; transform: scale(var(--process-scale, 1)); transform-origin: top left; }
     .process-pinned { height: 280svh; scroll-margin-top: -76px; }
     .process-pinned .process-stage { position: sticky; top: 0; height: 100svh; }
+}
+@media (max-width: 575.98px) {
+    .process-canvas { padding: 100px 24px 28px; }
+    .process-heading { text-align: right; }
+    .process-heading h2 { margin: 0; font-size: 27px; line-height: .86; text-align: right; }
+    .process-heading p { width: min(100%, 218px); margin: 18px 0 0 auto; font: 400 19px/1 Huninn, sans-serif; letter-spacing: -.02em; text-align: right; }
+    .process-illustration { width: min(62.4vw, 234px); margin: 58px auto 60px; }
+    .process-tabs { display: flex; flex-wrap: nowrap; gap: 8px; width: calc(100% + 48px); margin: 0 -24px 18px; padding: 0 12vw; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 12vw; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .process-tabs::-webkit-scrollbar { display: none; }
+    .process-slide { flex: 0 0 76vw; align-items: center; scroll-snap-align: center; scroll-snap-stop: always; }
+    .process-slide.is-before .process-tab { align-self: flex-end; }
+    .process-slide.is-after .process-tab { align-self: flex-start; }
+    .process-tab { padding: 6px 0 0; color: #888; font-size: 35px; line-height: 1.03; text-align: center; }
+    .process-tab[aria-pressed="true"] { color: var(--brand-orange); }
+    .process-detail { width: 100%; margin-top: 24px; }
+    .process-detail p { margin: 0; font-size: 23px; line-height: 1; letter-spacing: -.07em; text-align: justify; }
+    .process-line { display: block; position: relative; width: 64vw; height: 6px; margin: 0 auto 24px; overflow: hidden; border-radius: 6px; }
+    .process-line img { width: 100%; height: 100%; transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
     .process-interactive .process-detail { animation: none; }

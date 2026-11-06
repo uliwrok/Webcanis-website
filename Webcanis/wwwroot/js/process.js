@@ -4,6 +4,7 @@ const process = document.querySelector('.process-section');
 if (process) {
     const tabs = [...process.querySelectorAll('.process-tab')];
     const details = [...process.querySelectorAll('.process-detail')];
+    const slides = [...process.querySelectorAll('.process-slide')];
     const tablist = process.querySelector('.process-tabs');
     const canvas = process.querySelector('.process-canvas');
     const illustration = process.querySelector('.process-illustration');
@@ -20,30 +21,34 @@ if (process) {
     let playbackFrame = 0;
 
     process.classList.add('process-interactive');
-    tablist.setAttribute('role', 'tablist');
+    tablist.setAttribute('role', 'list');
     tabs.forEach((tab, index) => {
-        tab.setAttribute('role', 'tab');
-        details[index].setAttribute('role', 'tabpanel');
+        slides[index].setAttribute('role', 'listitem');
+        details[index].setAttribute('role', 'region');
     });
 
     function paint(progress) {
         visualProgress = progress;
         const state = getProcessFrame(progress);
         active = state.active;
-        process.dataset.stage = String(active);
+        const selected = desktop.matches ? active : targetStage;
+        process.dataset.stage = String(selected);
         svgTimelines.forEach(timeline => timeline.setCurrentTime(getProcessMorphTime(progress)));
         tabs.forEach((tab, index) => {
             const pose = state.stages[index];
-            tab.setAttribute('aria-selected', String(index === active));
-            tab.tabIndex = index === active ? 0 : -1;
+            slides[index].classList.toggle('is-active', index === selected);
+            slides[index].classList.toggle('is-before', index < selected);
+            slides[index].classList.toggle('is-after', index > selected);
+            tab.setAttribute('aria-pressed', String(index === selected));
+            tab.tabIndex = index === selected ? 0 : -1;
             tab.style.setProperty('--stage-x', `${pose.x / 17.28}cqw`);
             tab.style.setProperty('--stage-y', `${pose.y / 17.28}cqw`);
             tab.style.setProperty('--stage-color', `rgb(${128 + pose.emphasis * 127}, ${128 - pose.emphasis * 33}, ${128 - pose.emphasis * 77})`);
             const detail = details[index];
             const opacity = Math.max(0, pose.emphasis * 2 - 1);
-            detail.hidden = desktop.matches ? opacity < .001 : index !== active;
-            detail.inert = index !== active;
-            detail.setAttribute('aria-hidden', String(index !== active));
+            detail.hidden = desktop.matches ? opacity < .001 : index !== selected;
+            detail.inert = index !== selected;
+            detail.setAttribute('aria-hidden', String(index !== selected));
             detail.style.opacity = desktop.matches ? opacity : 1;
             detail.style.transform = desktop.matches ? `translateY(${(1 - pose.emphasis) * 12}px)` : '';
         });
@@ -84,9 +89,37 @@ if (process) {
             const start = scrollY + process.getBoundingClientRect().top;
             // The sticky scene stays in place; its own playback provides the transition.
             window.scrollTo({ top: start + range * index / 3, behavior: 'instant' });
+        } else if (!desktop.matches) {
+            const slide = slides[index];
+            tablist.scrollTo({
+                left: slide.offsetLeft - (tablist.clientWidth - slide.offsetWidth) / 2,
+                behavior: 'instant'
+            });
         }
         showStage(index);
     }
+
+    function syncCarouselStage() {
+        const center = tablist.getBoundingClientRect().left + tablist.clientWidth / 2;
+        const nearest = slides.reduce((closest, slide, index) => {
+            const rect = slide.getBoundingClientRect();
+            const distance = Math.abs(rect.left + rect.width / 2 - center);
+            return distance < closest.distance ? { index, distance } : closest;
+        }, { index: active, distance: Infinity }).index;
+        if (nearest !== targetStage) showStage(nearest);
+    }
+
+    let carouselFrame = 0;
+    tablist.addEventListener('scroll', () => {
+        if (desktop.matches || carouselFrame) return;
+        carouselFrame = requestAnimationFrame(() => {
+            carouselFrame = 0;
+            syncCarouselStage();
+        });
+    }, { passive: true });
+    tablist.addEventListener('scrollend', () => {
+        if (!desktop.matches) syncCarouselStage();
+    }, { passive: true });
 
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => select(index));

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from '../lib/three/examples/jsm/loaders/GLTFLoader.js';
 import { RoomEnvironment } from '../lib/three/examples/jsm/environments/RoomEnvironment.js';
-import { getLaptopPose, getMobileLaptopPose, laptopPoses, smoothstep } from './laptop-motion.mjs?v=mobile-solution-pose';
+import { getLaptopPose, getMobileLaptopPose, laptopPoses, smoothstep } from './laptop-motion.mjs?v=projects-static';
 
 let screenSource = null;
 let updateScreen = null;
@@ -135,13 +135,16 @@ export async function createLaptopRenderer(journey) {
                 };
                 return distance(slot) < distance(closest) ? slot : closest;
             }, slots[0]);
-            pose = state.mobileTime == null
-                ? (host.dataset.modelPose === 'solutions' && matchMedia('(max-width: 575.98px)').matches
-                    ? getMobileLaptopPose(1)
-                    : laptopPoses[host.dataset.modelPose])
-                : getMobileLaptopPose(state.mobileTime);
+            pose = host.dataset.modelPose === 'projects'
+                ? laptopPoses.projects
+                : state.mobileTime == null
+                    ? (host.dataset.modelPose === 'solutions' && matchMedia('(max-width: 575.98px)').matches
+                        ? getMobileLaptopPose(1)
+                        : laptopPoses[host.dataset.modelPose])
+                    : getMobileLaptopPose(Math.min(state.mobileTime, 1));
         }
         const hostChanged = canvas.parentElement !== host;
+        const previousHostPose = hostChanged ? canvas.parentElement?.dataset.modelPose : host.dataset.modelPose;
         const previousRect = hostChanged && canvas.parentElement ? canvas.getBoundingClientRect() : null;
         if (hostChanged) {
             transferAnimation?.cancel();
@@ -185,20 +188,14 @@ export async function createLaptopRenderer(journey) {
             (targetY - (framed.top + framed.bottom) / 2) * rect.height / 2,
             rect.width, rect.height);
         renderer.render(scene, camera);
-        if (previousRect && !state.enhanced && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            const width = canvas.offsetWidth;
-            const height = canvas.offsetHeight;
+        if (previousRect && previousHostPose !== 'projects' && host.dataset.modelPose !== 'projects'
+            && !state.enhanced && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
             const destination = canvas.getBoundingClientRect();
             const base = getComputedStyle(canvas).transform;
-            const matrix = base === 'none' ? new DOMMatrix() : new DOMMatrix(base);
-            const baseScaleX = Math.hypot(matrix.a, matrix.b);
-            const baseScaleY = Math.hypot(matrix.c, matrix.d);
-            const scaleX = previousRect.width / width;
-            const scaleY = previousRect.height / height;
-            const translateX = previousRect.left - destination.left + (scaleX - baseScaleX) * width / 2;
+            const translateX = previousRect.left - destination.left;
             const translateY = previousRect.top - destination.top;
             transferAnimation = canvas.animate([
-                { transform: `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})` },
+                { transform: `translate(${translateX}px, ${translateY}px) ${base === 'none' ? '' : base}`.trim() },
                 { transform: base }
             ], { duration: 520, easing: 'cubic-bezier(.22, .61, .36, 1)' });
             transferAnimation.onfinish = () => { transferAnimation = null; };

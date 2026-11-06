@@ -1,5 +1,5 @@
-import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=mobile-solution-pose';
-import './process.js';
+import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=projects-static';
+import './process.js?v=mobile-stage-carousel-peek';
 import { initializeSolutions } from './solutions.js';
 
 const navigation = document.getElementById('main-navigation');
@@ -188,7 +188,7 @@ if (journey) {
     });
     configure();
     requestAnimationFrame(alignHash);
-        import('./laptop-model.js?v=mobile-solution-pose')
+        import('./laptop-model.js?v=projects-static')
         .then(async module => {
             await initializeSolutions(module.setLaptopScreenImage);
             return module.createLaptopRenderer(journey);
