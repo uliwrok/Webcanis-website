@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@{ var cspNonce = Context.Items["CspNonce"] as string; }
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="~/css/process.css" asp-append-version="true" />
     <link rel="preload" as="image" href="~/images/solutions/example1.webp" />
     <link rel="preload" as="fetch" href="~/models/generic-laptop.glb" crossorigin />
-    <script type="importmap">
+    <script type="importmap" nonce="@cspNonce">
         { "imports": { "three": "@Url.Content("~/lib/three/build/three.module.min.js")" } }
     </script>
 </head>

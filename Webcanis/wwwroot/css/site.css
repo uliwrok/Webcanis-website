@@ -138,6 +138,9 @@ a, button { touch-action: manipulation; transition: color 160ms ease, background
     .about-copy .text-link { font-size: inherit; }
 }
 .contact-note { max-width: 32rem; margin-top: 2rem; padding-left: 1rem; border-left: 2px solid var(--accent-ink); font-size: .875rem; }
+.contact-note.is-success { color: #176b36; border-color: #176b36; }
+.contact-note.is-error, .field-validation-error { color: #a32626; }
+.field-validation-error { display: block; font-size: .875rem; }
 .form-label { font-size: .9375rem; }
 .form-control { min-height: 48px; border: 1px solid var(--line-color); border-radius: 4px; font-size: 1rem; }
 .form-control:disabled { background: var(--surface); opacity: 1; }

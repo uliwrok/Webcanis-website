@@ -23,8 +23,19 @@ labeled as illustrative solution concepts, not client case studies.
 visible keyboard focus, and reduced-motion support. `wwwroot/js/site.js`
 closes the Bootstrap mobile navigation after an anchor is selected.
 
-The contact destination is intentionally unset. The form is disabled and
-collects no data. No sending endpoint or success confirmation is implemented.
+The contact form posts to the Razor Page and sends the submitted name, company,
+email, and project details to `uliwrok@gmail.com` through SMTP. Configure these
+environment variables on the server before enabling email delivery:
+
+```text
+Smtp__Host
+Smtp__Port (optional; defaults to 587)
+Smtp__Username
+Smtp__Password
+```
+
+SMTP uses TLS. Keep credentials in deployment secrets, not in source control.
+Until they are configured, the form displays that it is unavailable.
 
 ## 3D laptop and scroll
 
@@ -55,7 +66,7 @@ fades and blurs. The model stays outside that effect. Smaller viewports and
 reduced-motion preferences retain ordinary document scrolling; the same canvas
 is moved between the three static model slots, without creating more contexts.
 A WebGL/model-loading failure leaves the content usable with an unavailable note.
-The contact form remains disabled and collects no data.
+The contact form sends inquiries to `uliwrok@gmail.com` when SMTP is configured.
 
 ## How we work
 
