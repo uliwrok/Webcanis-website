@@ -5,14 +5,15 @@ export function initializeSolutions(setScreenImage) {
 
     async function select(button) {
         const request = ++selectionRequest;
+        buttons.forEach(item => {
+            const selected = item === button;
+            item.setAttribute('aria-pressed', String(selected));
+            item.closest('.service-item').classList.toggle('is-featured', selected);
+        });
+        status.textContent = '';
         try {
             await setScreenImage(button.dataset.screenImage);
             if (request !== selectionRequest) return;
-            buttons.forEach(item => {
-                const selected = item === button;
-                item.setAttribute('aria-pressed', String(selected));
-                item.closest('.service-item').classList.toggle('is-featured', selected);
-            });
             status.textContent = '';
         } catch (error) {
             if (request !== selectionRequest) return;

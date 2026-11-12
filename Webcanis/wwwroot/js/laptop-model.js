@@ -23,6 +23,7 @@ export async function setLaptopScreenImage(source = null) {
 export async function createLaptopRenderer(journey) {
     const sharedStage = journey.querySelector('.laptop-stage');
     const slots = [...journey.querySelectorAll('[data-model-pose]')];
+    const modelRequest = new GLTFLoader().loadAsync(sharedStage.dataset.modelUrl);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: 'low-power' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -54,7 +55,7 @@ export async function createLaptopRenderer(journey) {
 
     let gltf;
     try {
-        gltf = await new GLTFLoader().loadAsync(sharedStage.dataset.modelUrl);
+        gltf = await modelRequest;
     } catch (error) {
         environment.dispose();
         renderer.dispose();
@@ -119,7 +120,8 @@ export async function createLaptopRenderer(journey) {
     let lastSignature = '';
     let disposed = false;
     let contextLost = false;
-    let screenTexture = null;
+    const screenTextures = new Map();
+    const textureLoader = new THREE.TextureLoader();
     let imageRequest = 0;
     let transferAnimation = null;
 
@@ -181,8 +183,7 @@ export async function createLaptopRenderer(journey) {
         camera.updateProjectionMatrix();
         const framed = projectedBounds();
         const targetX = state.enhanced ? pose.x / 1728 * 2 - 1 : 0;
-        let targetY = state.enhanced ? 1 - pose.y / designHeight * 2 : 0;
-        targetY += Math.max(0, -.98 + (framed.top - framed.bottom) / 2 - targetY) * homeFit;
+        const targetY = state.enhanced ? 1 - pose.y / designHeight * 2 : 0;
         camera.setViewOffset(rect.width, rect.height,
             ((framed.left + framed.right) / 2 - targetX) * rect.width / 2,
             (targetY - (framed.top + framed.bottom) / 2) * rect.height / 2,
@@ -202,27 +203,52 @@ export async function createLaptopRenderer(journey) {
         }
     }
 
+    function loadScreenTexture(source) {
+        if (!screenTextures.has(source)) {
+            const pending = textureLoader.loadAsync(source).then(texture => {
+                if (disposed) {
+                    texture.dispose();
+                    return null;
+                }
+                texture.flipY = false;
+                texture.colorSpace = THREE.SRGBColorSpace;
+                texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
+                renderer.initTexture(texture);
+                return texture;
+            }).catch(error => {
+                screenTextures.delete(source);
+                throw error;
+            });
+            screenTextures.set(source, pending);
+        }
+        return screenTextures.get(source);
+    }
+
     async function setScreenImage(source) {
         const request = ++imageRequest;
-        let texture = null;
-        if (source) {
-            texture = await new THREE.TextureLoader().loadAsync(source);
-            if (request !== imageRequest || disposed) {
-                texture.dispose();
-                return;
-            }
-            texture.flipY = false;
-            texture.colorSpace = THREE.SRGBColorSpace;
-            texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
-        }
-        screenTexture?.dispose();
-        screenTexture = texture;
+        const texture = source ? await loadScreenTexture(source) : null;
+        if (request !== imageRequest || disposed) return;
+        const hadImage = Boolean(screen.material.map);
         screen.material.map = texture;
         screen.material.color.set(texture ? 0xffffff : 0x090c10);
-        screen.material.needsUpdate = true;
+        if (hadImage !== Boolean(texture)) screen.material.needsUpdate = true;
         journey.dataset.screenState = texture ? 'image' : 'blank';
         lastSignature = '';
         draw();
+    }
+
+    async function preloadScreens() {
+        const sources = new Set([...journey.querySelectorAll('[data-screen-image]')]
+            .map(button => new URL(button.dataset.screenImage, document.baseURI).href));
+        for (const source of sources) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            if (disposed) return;
+            try {
+                await loadScreenTexture(source);
+            } catch (error) {
+                console.warn('A laptop preview could not be preloaded.', error);
+            }
+        }
     }
 
     function dispose() {
@@ -232,6 +258,10 @@ export async function createLaptopRenderer(journey) {
         const geometries = new Set();
         const materials = new Set();
         const textures = new Set();
+        screenTextures.forEach(pending => pending.then(texture => {
+            if (texture && !textures.has(texture)) texture.dispose();
+        }).catch(() => {}));
+        screenTextures.clear();
         model.traverse(object => {
             if (!object.isMesh) return;
             geometries.add(object.geometry);
@@ -251,12 +281,10 @@ export async function createLaptopRenderer(journey) {
     }
 
     updateScreen = setScreenImage;
-    try {
-        await setScreenImage(screenSource);
-    } catch (error) {
-        console.warn('The initial laptop screen image could not be loaded; leaving it blank.', error);
-        await setScreenImage(null);
-    }
+    // Let the controller render the model while its first screen image loads.
+    setScreenImage(screenSource).catch(error => {
+        console.warn('The initial laptop screen image could not be loaded.', error);
+    }).then(() => preloadScreens());
     canvas.addEventListener('webglcontextlost', () => {
         contextLost = true;
         journey.dataset.modelState = 'unavailable';

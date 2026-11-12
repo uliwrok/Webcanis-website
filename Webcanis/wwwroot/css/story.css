@@ -4,7 +4,7 @@
 /* The 1728 × 1077 content canvas excludes Figma's sample browser toolbar. */
 html { scroll-padding-top: 76px; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 20; padding: .58vw .87vw; border: 0; background: transparent; }
-.site-header.is-over-home { background: var(--page-background); }
+.site-header.is-over-home { background: linear-gradient(to bottom, var(--page-background) 0%, color-mix(in srgb, var(--page-background) 85%, transparent) 55%, transparent 100%); }
 .site-header.is-over-dark .nav-link,
 .site-header.is-over-dark .nav-link:hover,
 .site-header.is-over-dark .nav-link:focus-visible { color: #fff; }
