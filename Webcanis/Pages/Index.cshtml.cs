@@ -1,6 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Net.Mail;
+using System.Net.Mime;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -51,12 +53,57 @@ public class IndexModel(IConfiguration configuration, ILogger<IndexModel> logger
 
         try
         {
+            var company = string.IsNullOrWhiteSpace(Company) ? "Not provided" : Company;
+            var htmlMessage = WebUtility.HtmlEncode(Message)
+                .Replace("\r\n", "<br>")
+                .Replace("\n", "<br>")
+                .Replace("\r", "<br>");
+            var htmlBody = $$"""
+                <!doctype html>
+                <html lang="en">
+                <body style="margin:0;padding:32px 12px;background:#f1f2ef;font-family:Arial,Helvetica,sans-serif;color:#302a28;">
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;margin:0 auto;background:#ffffff;border-collapse:collapse;">
+                    <tr>
+                      <td style="padding:24px 32px;background:#34483c;color:#ffffff;">
+                        <div style="font-size:12px;letter-spacing:2px;">WEBCANIS</div>
+                        <h1 style="margin:12px 0 0;font-size:24px;font-weight:600;">New project inquiry</h1>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:28px 32px 12px;font-size:15px;line-height:1.6;">
+                        A new message was submitted through the Webcanis contact form.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:8px 32px 24px;">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;font-size:14px;line-height:1.5;">
+                          <tr><th align="left" style="width:120px;padding:10px 12px;border-bottom:1px solid #e5e4e2;color:#5e5856;">Name</th><td style="padding:10px 12px;border-bottom:1px solid #e5e4e2;">{{WebUtility.HtmlEncode(Name)}}</td></tr>
+                          <tr><th align="left" style="padding:10px 12px;border-bottom:1px solid #e5e4e2;color:#5e5856;">Company</th><td style="padding:10px 12px;border-bottom:1px solid #e5e4e2;">{{WebUtility.HtmlEncode(company)}}</td></tr>
+                          <tr><th align="left" style="padding:10px 12px;border-bottom:1px solid #e5e4e2;color:#5e5856;">Email</th><td style="padding:10px 12px;border-bottom:1px solid #e5e4e2;">{{WebUtility.HtmlEncode(Email)}}</td></tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:0 32px 32px;">
+                        <h2 style="margin:0 0 10px;font-size:16px;">Project details</h2>
+                        <div style="padding:16px;background:#f6f6f3;border-left:3px solid #a53517;font-size:14px;line-height:1.6;overflow-wrap:anywhere;">{{htmlMessage}}</div>
+                      </td>
+                    </tr>
+                    <tr><td style="padding:16px 32px;border-top:1px solid #e5e4e2;color:#5e5856;font-size:12px;">Sent via the Webcanis contact form. Reply to this email to contact the sender.</td></tr>
+                  </table>
+                </body>
+                </html>
+                """;
+
             using var mail = new MailMessage
             {
                 From = new MailAddress(username),
-                Subject = "Webcanis project inquiry",
-                Body = $"Name: {Name}\nCompany: {Company}\nEmail: {Email}\n\n{Message}"
+                Subject = "New project inquiry | Webcanis",
+                Body = $"New project inquiry - Webcanis\n\nName: {Name}\nCompany: {company}\nEmail: {Email}\n\nProject details:\n{Message}\n\nReply to this email to contact the sender.",
+                BodyEncoding = Encoding.UTF8,
+                SubjectEncoding = Encoding.UTF8
             };
+            mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(htmlBody, Encoding.UTF8, MediaTypeNames.Text.Html));
             mail.To.Add("uliwrok@gmail.com");
             mail.ReplyToList.Add(new MailAddress(Email));
             using var client = new SmtpClient(host, port)

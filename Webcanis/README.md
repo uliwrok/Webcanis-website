@@ -24,18 +24,16 @@ visible keyboard focus, and reduced-motion support. `wwwroot/js/site.js`
 closes the Bootstrap mobile navigation after an anchor is selected.
 
 The contact form posts to the Razor Page and sends the submitted name, company,
-email, and project details to `uliwrok@gmail.com` through SMTP. Configure these
-environment variables on the server before enabling email delivery:
+email, and project details to `uliwrok@gmail.com` through SMTP. The production
+SMTP host, port, and sending account are in `appsettings.Production.json`.
+Configure the password as a secret environment variable on the production host:
 
 ```text
-Smtp__Host
-Smtp__Port (optional; defaults to 587)
-Smtp__Username
 Smtp__Password
 ```
 
 SMTP uses TLS. Keep credentials in deployment secrets, not in source control.
-Until they are configured, the form displays that it is unavailable.
+Until the password is configured, the form displays that it is unavailable.
 
 ## 3D laptop and scroll
 
