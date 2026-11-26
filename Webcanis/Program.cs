@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.AspNetCore.HttpOverrides;
 using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+    options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto);
 
 var app = builder.Build();
+app.UseForwardedHeaders();
 
 app.Use(async (context, next) =>
 {
