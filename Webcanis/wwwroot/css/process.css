@@ -5,9 +5,9 @@
 .process-heading h2 span { color: var(--brand-orange); }
 .process-heading p { font: 16px/1.5 'IBM Plex Mono', monospace; letter-spacing: -.08em; color: #696564; }
 .process-illustration { position: relative; width: clamp(180px, 60vw, 340px); aspect-ratio: 450 / 448; margin: 28px auto; pointer-events: none; }
-.process-illustration img, .process-illustration object { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.process-illustration object { visibility: hidden; }
-.process-illustration.is-ready object { visibility: visible; }
+.process-illustration img, .process-illustration .process-art-frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.process-illustration .process-art-frame { visibility: hidden; overflow: hidden; }
+.process-illustration.is-ready .process-art-frame { visibility: visible; }
 .process-illustration.is-ready .process-art-fallback { visibility: hidden; }
 .process-tabs { flex-wrap: wrap; gap: 12px 24px; margin: 40px 0 28px; }
 .process-slide { display: flex; flex-direction: column; min-width: 0; }
@@ -55,4 +55,7 @@
 }
 @media (prefers-reduced-motion: reduce) {
     .process-interactive .process-detail { animation: none; }
+    .process-illustration .process-art-frame { visibility: hidden !important; }
+    .process-illustration .process-art-fallback,
+    .process-illustration.is-ready .process-art-fallback { visibility: visible !important; }
 }

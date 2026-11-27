@@ -142,7 +142,7 @@ a, button { touch-action: manipulation; transition: color 160ms ease, background
 .contact-note.is-error, .field-validation-error { color: #a32626; }
 .field-validation-error { display: block; font-size: .875rem; }
 .form-label { font-size: .9375rem; }
-.form-control { min-height: 48px; border: 1px solid var(--line-color); border-radius: 4px; font-size: 1rem; }
+.form-control { min-height: 48px; border: 1px solid var(--line-color); border-radius: 4px; background-color: var(--surface-light); font-size: 1rem; }
 .form-control:disabled { background: var(--surface); opacity: 1; }
 .form-text { color: var(--body-color); font-size: .875rem; }
 .site-footer { padding-block: 2.25rem 1rem; background: #34483c; color: #f7f8f8; }

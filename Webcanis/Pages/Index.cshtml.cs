@@ -40,9 +40,11 @@ public class IndexModel(IConfiguration configuration, ILogger<IndexModel> logger
         var host = configuration["Smtp:Host"];
         var username = configuration["Smtp:Username"];
         var password = configuration["Smtp:Password"];
+        var recipient = configuration["Smtp:Recipient"];
         var portSetting = configuration["Smtp:Port"];
         var port = 587;
         if (string.IsNullOrWhiteSpace(host) || string.IsNullOrWhiteSpace(username)
+            || string.IsNullOrWhiteSpace(recipient)
             || string.IsNullOrWhiteSpace(password)
             || (portSetting is not null && (!int.TryParse(portSetting, out port) || port < 1 || port > 65535)))
         {
@@ -104,7 +106,7 @@ public class IndexModel(IConfiguration configuration, ILogger<IndexModel> logger
                 SubjectEncoding = Encoding.UTF8
             };
             mail.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(htmlBody, Encoding.UTF8, MediaTypeNames.Text.Html));
-            mail.To.Add("uliwrok@gmail.com");
+            mail.To.Add(recipient);
             mail.ReplyToList.Add(new MailAddress(Email));
             using var client = new SmtpClient(host, port)
             {

@@ -1,5 +1,5 @@
 import { smoothstep, getLaptopSceneTime, getLaptopPlayback } from './laptop-motion.mjs?v=projects-static';
-import './process.js?v=mobile-stage-carousel-peek';
+import './process.js?v=process-iframe-viewport';
 import { initializeSolutions } from './solutions.js';
 
 const navigation = document.getElementById('main-navigation');

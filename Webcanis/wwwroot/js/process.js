@@ -8,7 +8,7 @@ if (process) {
     const tablist = process.querySelector('.process-tabs');
     const canvas = process.querySelector('.process-canvas');
     const illustration = process.querySelector('.process-illustration');
-    const artwork = illustration.querySelector('object');
+    const artwork = illustration.querySelector('.process-art-frame');
     let svgTimelines = [];
     const desktop = matchMedia('(min-width: 1100px) and (min-height: 680px)');
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -19,6 +19,7 @@ if (process) {
     let visualProgress = 0;
     let targetStage = 0;
     let playbackFrame = 0;
+    let artworkLoaded = false;
 
     process.classList.add('process-interactive');
     tablist.setAttribute('role', 'list');
@@ -144,22 +145,32 @@ if (process) {
         if (reducedMotion.matches) showStage(targetStage, true);
         render();
     }
-    artwork.addEventListener('load', () => {
+    function syncIllustration() {
         const root = artwork.contentDocument?.documentElement;
-        if (typeof root?.pauseAnimations !== 'function') return;
-        // Nested SVG viewports have independent SMIL clocks in Chromium.
-        svgTimelines = [root, ...root.querySelectorAll('svg')];
+        if (reducedMotion.matches || !artworkLoaded) {
+            illustration.classList.remove('is-ready');
+            return;
+        }
+        if (root) {
+            root.setAttribute('width', '100%');
+            root.setAttribute('height', '100%');
+        }
+        // Keep the still fallback unless the embedded SVG exposes controllable timelines.
+        svgTimelines = root ? [root, ...root.querySelectorAll('svg')]
+            .filter(timeline => typeof timeline.pauseAnimations === 'function') : [];
+        if (!svgTimelines.length) return;
         svgTimelines.forEach(timeline => {
             timeline.pauseAnimations();
             timeline.setCurrentTime(getProcessMorphTime(visualProgress));
         });
         illustration.classList.add('is-ready');
-    });
-    artwork.data = illustration.dataset.animationUrl;
+    }
+    artwork.addEventListener('load', () => { artworkLoaded = true; syncIllustration(); });
+    artwork.src = illustration.dataset.animationUrl;
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', configure);
     desktop.addEventListener('change', configure);
-    reducedMotion.addEventListener('change', configure);
+    reducedMotion.addEventListener('change', () => { syncIllustration(); configure(); });
     window.addEventListener('load', () => {
         if (pinned && location.hash === '#proceso') {
             window.scrollTo({ top: scrollY + process.getBoundingClientRect().top, behavior: 'instant' });

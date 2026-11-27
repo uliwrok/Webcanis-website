@@ -24,8 +24,10 @@ visible keyboard focus, and reduced-motion support. `wwwroot/js/site.js`
 closes the Bootstrap mobile navigation after an anchor is selected.
 
 The contact form posts to the Razor Page and sends the submitted name, company,
-email, and project details to `uliwrok@gmail.com` through SMTP. The production
-SMTP host, port, and sending account are in `appsettings.Production.json`.
+email, and project details through SMTP. Its recipient is configured per
+environment: `uliwrok@gmail.com` in Development and
+`webcanisdev@gmail.com` in Production. The production SMTP host, port, and
+sending account are in `appsettings.Production.json`.
 Configure the password as a secret environment variable on the production host:
 
 ```text
@@ -64,7 +66,6 @@ fades and blurs. The model stays outside that effect. Smaller viewports and
 reduced-motion preferences retain ordinary document scrolling; the same canvas
 is moved between the three static model slots, without creating more contexts.
 A WebGL/model-loading failure leaves the content usable with an unavailable note.
-The contact form sends inquiries to `uliwrok@gmail.com` when SMTP is configured.
 
 ## How we work
 
